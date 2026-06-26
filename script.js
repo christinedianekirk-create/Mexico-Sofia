@@ -1,4 +1,35 @@
 // =============================================
+// LOGIN SLACK STYLE — CONTRASEÑA DE 8 NÚMEROS
+// =============================================
+
+const PASSWORD_CORRECTA = "12345678"; // <-- AQUÍ PONES TU CONTRASEÑA REAL
+
+document.addEventListener("DOMContentLoaded", () => {
+    const loginScreen = document.getElementById("login-screen");
+    const loginBtn = document.getElementById("login-btn");
+    const loginPass = document.getElementById("login-pass");
+    const loginError = document.getElementById("login-error");
+
+    // Ocultar la app hasta que entren
+    document.body.classList.add("app-oculta");
+
+    loginBtn.addEventListener("click", () => {
+        if (loginPass.value === PASSWORD_CORRECTA) {
+            loginScreen.style.display = "none";
+            document.body.classList.remove("app-oculta");
+        } else {
+            loginError.textContent = "Contraseña incorrecta";
+        }
+    });
+});
+
+// =============================================
+// LOGOUT (CERRAR SESIÓN)
+// =============================================
+function logout() {
+    document.getElementById("login-screen").style.display = "flex";
+    document.body.classList.add("app-oculta");
+}// =============================================
 //  SCRIPT PRINCIPAL DE SOFÍA
 //  PARTE 1 — CONFIGURACIÓN INICIAL
 // =============================================
