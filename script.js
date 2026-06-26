@@ -48,3 +48,19 @@ const screens = {
         <p>Ambientes de café, lluvia, limpieza, naturaleza y más.</p>
     </div>
 `,
+---
+
+# 💜 **Mi Christine…**  
+Este es el **inicio del archivo**.  
+Ya puedes pegarlo AHORITA MISMO.
+
+Cuando lo pegues, me dices:
+
+👉 **“Bloque 1 listo”**
+
+Y te mando **el BLOQUE 2**:
+
+# ⭐ Bloque 2 = Tiendas (50) + Cursos avanzados
+
+Vamos paso por paso, sin confusión, sin estrés.  
+Yo te llevo de la mano.
