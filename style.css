@@ -329,3 +329,14 @@ tr:hover {
 /* ================================
    FIN DEL CSS
    ================================ */
+:root {
+    --slack-purple: #4A154B;
+    --slack-purple-dark: #611F69;
+    --slack-blue: #36C5F0;
+    --slack-green: #2EB67D;
+    --slack-yellow: #ECB22E;
+    --slack-pink: #E01E5A;
+    --slack-black: #1A1D21;
+    --slack-white: #FFFFFF;
+    --slack-light: #F4F5F7;
+}
