@@ -28,3 +28,9 @@ menuItems.forEach(item => {
     `;
   });
 });
+if (page === "finanzas") {
+  mainPage.innerHTML = `
+    <h2>Finanzas</h2>
+    <p>Herramientas para organizar dinero, gastos y metas.</p>
+  `;
+}
