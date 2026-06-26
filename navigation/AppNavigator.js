@@ -1,3 +1,4 @@
+import FamiliaScreen from "../screens/FamiliaScreen";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import HomeScreen from "../screens/HomeScreen";
@@ -13,6 +14,7 @@ export default function AppNavigator() {
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Inicio" component={HomeScreen} />
         <Stack.Screen name="Menú" component={MenuScreen} />
+        <Stack.Screen name="Familia" component={FamiliaScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
