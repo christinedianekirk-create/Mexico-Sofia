@@ -316,3 +316,90 @@ Yo te llevo de la mano.
 
         </div>
     `,
+// ⭐ PANTALLA: ORGANIZACIÓN DEL HOGAR
+    "Organización del Hogar": `
+        <div class="title">🏡 Organización del Hogar</div>
+        <p class="section-title">Limpieza, rutinas, listas y organización diaria</p>
+
+        <div class="grid">
+
+            <div class="card"><h3>🧼 Limpieza Diaria</h3><p>Rutinas rápidas para mantener la casa limpia.</p></div>
+            <div class="card"><h3>🧽 Limpieza Profunda</h3><p>Guías para cada área del hogar.</p></div>
+            <div class="card"><h3>🧺 Lavandería</h3><p>Organización, ciclos y trucos.</p></div>
+            <div class="card"><h3>🛏️ Dormitorios</h3><p>Orden, ropa de cama y organización.</p></div>
+            <div class="card"><h3>🍽️ Cocina</h3><p>Despensa, refrigerador y limpieza.</p></div>
+
+            <div class="card"><h3>🧸 Cuarto de Niños</h3><p>Juguetes, ropa y rutinas.</p></div>
+            <div class="card"><h3>🧹 Rutinas Semanales</h3><p>Organización por días.</p></div>
+            <div class="card"><h3>🗂️ Listas</h3><p>Listas imprimibles y digitales.</p></div>
+            <div class="card"><h3>🕯️ Hogar Aesthetic</h3><p>Ambientes bonitos y relajantes.</p></div>
+            <div class="card"><h3>🛒 Compras</h3><p>Listas de supermercado y tips.</p></div>
+
+        </div>
+    `,
+
+
+    // ⭐ PANTALLA: NEGOCIOS DIGITALES
+    "Negocios Digitales": `
+        <div class="title">💼 Negocios Digitales</div>
+        <p class="section-title">Ideas, guías y herramientas para emprender</p>
+
+        <div class="grid">
+
+            <div class="card"><h3>🛍️ Tiendas Digitales</h3><p>Cómo vender productos digitales.</p></div>
+            <div class="card"><h3>📚 KDP</h3><p>Publica libros en Amazon.</p></div>
+            <div class="card"><h3>🛒 Etsy</h3><p>Vende plantillas y productos.</p></div>
+            <div class="card"><h3>🎨 Canva</h3><p>Diseño fácil para emprender.</p></div>
+            <div class="card"><h3>📱 Redes Sociales</h3><p>Crecimiento en TikTok e Instagram.</p></div>
+
+            <div class="card"><h3>📈 Marketing</h3><p>Estrategias simples para crecer.</p></div>
+            <div class="card"><h3>💰 Finanzas</h3><p>Cómo manejar el dinero del negocio.</p></div>
+            <div class="card"><h3>🧠 Mentalidad</h3><p>Motivación para emprender.</p></div>
+            <div class="card"><h3>🎁 Packs</h3><p>Paquetes completos de negocio.</p></div>
+            <div class="card"><h3>📝 PLR / MRR</h3><p>Contenido editable para vender.</p></div>
+
+        </div>
+    `,
+
+
+    // ⭐ PANTALLA: MOTIVACIÓN
+    "Motivación": `
+        <div class="title">💛 Motivación</div>
+        <p class="section-title">Frases, energía y ánimo para tu día</p>
+
+        <div class="grid">
+
+            <div class="card"><h3>✨ Frases Bonitas</h3><p>Motivación diaria.</p></div>
+            <div class="card"><h3>🌅 Mañanas</h3><p>Empieza tu día con energía.</p></div>
+            <div class="card"><h3>🌙 Noches</h3><p>Reflexiones para dormir tranquila.</p></div>
+            <div class="card"><h3>💪 Fuerza</h3><p>Para cuando te sientas cansada.</p></div>
+            <div class="card"><h3>🌻 Gratitud</h3><p>Para levantar el ánimo.</p></div>
+
+        </div>
+    `,
+
+
+    // ⭐ PANTALLA: FAVORITOS
+    "Favoritos": `
+        <div class="title">⭐ Favoritos</div>
+        <p class="section-title">Tus pantallas y recursos guardados</p>
+
+        <div class="card">
+            <h3>💛 Aquí aparecerán tus favoritos</h3>
+            <p>En una futura actualización podrás guardar lo que más uses.</p>
+        </div>
+    `,
+
+
+    // ⭐ PANTALLA: AJUSTES
+    "Ajustes": `
+        <div class="title">⚙️ Ajustes</div>
+        <p class="section-title">Configuración de tu app SOFÍA</p>
+
+        <div class="card">
+            <h3>🎨 Tema</h3>
+            <p>Modo oscuro activado (estilo Slack).</p>
+        </div>
+
+        <div class="card">
+            <h3>
