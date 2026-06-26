@@ -52,3 +52,9 @@ if (page === "recetas") {
     <p>Comidas, postres y preparaciones fáciles.</p>
   `;
 }
+if (page === "motivacion") {
+  mainPage.innerHTML = `
+    <h2>Motivación</h2>
+    <p>Frases, apoyo y ánimo para la familia.</p>
+  `;
+}
