@@ -163,3 +163,134 @@ function verificarPIN() {
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFÍA — Web App</title>
+
+    <!-- Estilo Slack -->
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background-color: #1A1D21;
+            color: #FFFFFF;
+            display: flex;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 260px;
+            background-color: #121016;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            border-right: 1px solid #2A2D31;
+        }
+
+        .sidebar h2 {
+            color: #36C5F0;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            color: #D1D2D3;
+            transition: 0.2s;
+        }
+
+        .menu-item:hover {
+            background-color: #1F2226;
+            color: #FFFFFF;
+        }
+
+        /* CONTENIDO PRINCIPAL */
+        .main {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .title {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #36C5F0;
+        }
+
+        /* TARJETAS */
+        .card {
+            background-color: #1F2226;
+            padding: 20px;
+            border-radius: 14px;
+            margin-bottom: 20px;
+            border: 1px solid #2A2D31;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            background-color: #24272C;
+        }
+
+        .card h3 {
+            margin: 0;
+            color: #E01E5A;
+        }
+
+        .card p {
+            color: #D1D2D3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h2>SOFÍA</h2>
+
+        <div class="menu-item">Inicio</div>
+        <div class="menu-item">Tiendas Lovely Day</div>
+        <div class="menu-item">Cursos y Guías</div>
+        <div class="menu-item">Recetarios</div>
+        <div class="menu-item">PLR / MRR</div>
+        <div class="menu-item">Videos Aesthetic</div>
+        <div class="menu-item">Organización del Hogar</div>
+        <div class="menu-item">Negocios Digitales</div>
+        <div class="menu-item">Motivación</div>
+        <div class="menu-item">Favoritos</div>
+        <div class="menu-item">Ajustes</div>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="main">
+        <div class="title">Bienvenida a SOFÍA</div>
+
+        <div class="card">
+            <h3>Tu Web App estilo Slack</h3>
+            <p>Sidebar oscuro, tarjetas redondeadas, colores Slack, diseño profesional.</p>
+        </div>
+
+        <div class="card">
+            <h3>50 Tiendas Lovely Day</h3>
+            <p>Listas para integrarse en las siguientes pantallas.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cursos y Guías</h3>
+            <p>Todo organizado para tu familia en México.</p>
+        </div>
+
+        <div class="card">
+            <h3>Videos Aesthetic</h3>
+            <p>Ambientes de café, lluvia, limpieza, naturaleza y más.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
