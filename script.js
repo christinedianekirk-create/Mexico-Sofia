@@ -402,3 +402,35 @@ const screens = {
             <div class="card"><h3>Guía</h3><p>Contenido de la guía…</p></div>
         </div>
     `,
+"Cursos y Guías": `
+    <div class="title">Cursos y Guías</div>
+    <p class="section-title">Cursos completos, mini cursos, guías y kits</p>
+
+    <div class="grid">
+
+        <div class="card"><h3>Curso 1 — Negocio Digital</h3><p>Aprende a crear un negocio desde cero.</p></div>
+        <div class="card"><h3>Curso 2 — Marketing Básico</h3><p>Conceptos esenciales para crecer.</p></div>
+        <div class="card"><h3>Curso 3 — Redes Sociales</h3><p>Cómo crecer en TikTok, IG y Facebook.</p></div>
+        <div class="card"><h3>Curso 4 — Ventas</h3><p>Aprende a vender sin miedo.</p></div>
+        <div class="card"><h3>Curso 5 — Canva Pro</h3><p>Diseño fácil para principiantes.</p></div>
+
+        <div class="card"><h3>Mini Curso — Finanzas</h3><p>Controla tu dinero en 1 hora.</p></div>
+        <div class="card"><h3>Mini Curso — Etsy</h3><p>Cómo abrir tu tienda rápido.</p></div>
+        <div class="card"><h3>Mini Curso — KDP</h3><p>Publica tu primer libro.</p></div>
+        <div class="card"><h3>Mini Curso — PLR</h3><p>Vende contenido editable.</p></div>
+        <div class="card"><h3>Mini Curso — Motivación</h3><p>Cómo empezar sin miedo.</p></div>
+
+        <div class="card"><h3>Guía — Emprendedoras</h3><p>Primeros pasos para iniciar.</p></div>
+        <div class="card"><h3>Guía — Branding</h3><p>Crea tu identidad visual.</p></div>
+        <div class="card"><h3>Guía — TikTok Viral</h3><p>Cómo crear contenido viral.</p></div>
+        <div class="card"><h3>Guía — Organización</h3><p>Organiza tu día como profesional.</p></div>
+        <div class="card"><h3>Guía — Ventas Rápidas</h3><p>Técnicas simples y efectivas.</p></div>
+
+        <div class="card"><h3>Kit — Negocio Completo</h3><p>Todo lo necesario para empezar.</p></div>
+        <div class="card"><h3>Kit — Redes Sociales</h3><p>Plantillas, ideas y estrategias.</p></div>
+        <div class="card"><h3>Kit — PLR Pro</h3><p>Contenido editable premium.</p></div>
+        <div class="card"><h3>Kit — Marketing</h3><p>Herramientas para crecer.</p></div>
+        <div class="card"><h3>Kit — Emprendedoras</h3><p>Guías, plantillas y recursos.</p></div>
+
+    </div>
+`,
