@@ -393,3 +393,12 @@ const screens = {
 
     </div>
 `,
+"Cursos y Guías": `
+        <div class="title">Cursos y Guías</div>
+
+        <div class="grid">
+            <div class="card"><h3>Curso 1</h3><p>Contenido del curso…</p></div>
+            <div class="card"><h3>Mini Curso</h3><p>Contenido del mini curso…</p></div>
+            <div class="card"><h3>Guía</h3><p>Contenido de la guía…</p></div>
+        </div>
+    `,
