@@ -272,3 +272,47 @@ Yo te llevo de la mano.
 
         </div>
     `,
+// ⭐ PANTALLA: RECETARIOS (AVANZADO)
+    "Recetarios": `
+        <div class="title">🍽️ Recetarios</div>
+        <p class="section-title">Postres, bebidas, bolis, gelatinas y más</p>
+
+        <div class="grid">
+
+            <div class="card"><h3>🍰 Postres</h3><p>Pasteles, galletas, flanes, panqués y más.</p></div>
+            <div class="card"><h3>🍮 Gelatinas</h3><p>Gelatinas mosaico, de leche, de agua y gourmet.</p></div>
+            <div class="card"><h3>🍧 Bolis</h3><p>Bolis de crema, agua, frutas y sabores mexicanos.</p></div>
+            <div class="card"><h3>🥤 Bebidas</h3><p>Aguas frescas, cafés, frappés y bebidas frías.</p></div>
+            <div class="card"><h3>🌮 Mexicanos</h3><p>Recetas tradicionales de México.</p></div>
+
+            <div class="card"><h3>🍳 Desayunos</h3><p>Opciones rápidas y deliciosas.</p></div>
+            <div class="card"><h3>🍽️ Comidas</h3><p>Platos fuertes fáciles de preparar.</p></div>
+            <div class="card"><h3>🌙 Cenas</h3><p>Recetas ligeras y prácticas.</p></div>
+            <div class="card"><h3>🥨 Snacks</h3><p>Botanas rápidas y económicas.</p></div>
+            <div class="card"><h3>🥐 Panadería</h3><p>Pan casero, roles, conchas y más.</p></div>
+
+            <div class="card"><h3>🥗 Saludables</h3><p>Recetas ligeras y nutritivas.</p></div>
+            <div class="card"><h3>🧸 Para Niños</h3><p>Recetas divertidas y fáciles.</p></div>
+            <div class="card"><h3>🎉 Para Fiestas</h3><p>Recetas para eventos y reuniones.</p></div>
+            <div class="card"><h3>⚡ Express</h3><p>Recetas en menos de 10 minutos.</p></div>
+            <div class="card"><h3>⭐ Especiales</h3><p>Recetas únicas y creativas.</p></div>
+
+        </div>
+    `,
+
+
+    // ⭐ PANTALLA: VIDEOS AESTHETIC (AVANZADO)
+    "Videos Aesthetic": `
+        <div class="title">🎧 Videos Aesthetic</div>
+        <p class="section-title">Ambientes relajantes para estudiar, limpiar o descansar</p>
+
+        <div class="grid">
+
+            <div class="card"><h3>☕ Café Aesthetic</h3><p>Ambiente cálido con música suave.</p></div>
+            <div class="card"><h3>🌧️ Lluvia Relajante</h3><p>Sonidos de lluvia para concentración.</p></div>
+            <div class="card"><h3>🧼 Limpieza Motivadora</h3><p>Videos para motivarte a limpiar.</p></div>
+            <div class="card"><h3>🌿 Naturaleza</h3><p>Ambientes verdes y relajantes.</p></div>
+            <div class="card"><h3>📚 Estudio</h3><p>Ambientes para estudiar sin distracciones.</p></div>
+
+        </div>
+    `,
