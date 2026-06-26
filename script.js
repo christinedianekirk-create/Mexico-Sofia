@@ -275,3 +275,13 @@ const screens = {
 
         <div class="grid">
             <div class="card"><h3>Rutinas</h3>
+"Tiendas Lovely Day": `
+        <div class="title">Tiendas Lovely Day</div>
+        <p class="section-title">50 tiendas listas para integrar</p>
+
+        <div class="grid">
+            <div class="card"><h3>Tienda 1</h3><p>Descripción aquí…</p></div>
+            <div class="card"><h3>Tienda 2</h3><p>Descripción aquí…</p></div>
+            <div class="card"><h3>Tienda 3</h3><p>Descripción aquí…</p></div>
+        </div>
+    `,
