@@ -398,3 +398,6 @@ tr:hover {
     margin-top: 10px;
     font-weight: bold;
 }
+.app-oculta *:not(#login-screen) {
+    display: none !important;
+}
