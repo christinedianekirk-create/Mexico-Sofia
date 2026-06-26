@@ -1,113 +1,25 @@
-<!-- ============================
-     LOGIN SLACK STYLE
-     ============================ -->
-<div id="login-screen" style="display: flex;">
-    <div class="login-container">
-        <h1 class="login-title">SOFÍA</h1>
-        <p class="login-sub">Ingresa tu contraseña de 8 números</p>
-
-        <input type="password" id="login-pass" maxlength="8" class="login-input" placeholder="********">
-
-        <button id="login-btn" class="login-btn">Entrar</button>
-
-        <p id="login-error" class="login-error"></p>
-    </div>
-
-
-    <!-- Estilo Slack Dark -->
-    <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOFIA · Familia MX</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="slack-dark">
+<body>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-        <h2 class="sidebar-title">SOFIA</h2>
+<div id="login-screen" style="display: flex;">
+  <div class="login-container">
+    <h1 class="login-title">SOFÍA</h1>
+    <p class="login-sub">Ingresa tu contraseña</p>
+    <input type="password" id="login-pass" maxlength="8" class="login-input">
+    <button id="login-btn" class="login-btn">Entrar</button>
+    <p id="login-error" class="login-error"></p>
+  </div>
+</div>
 
-        <nav class="menu">
-            <a href="#" class="menu-item" onclick="openSection('inicio')">🏠 Inicio</a>
+<script src="script.js"></script>
 
-            <h3 class="menu-header">Software</h3>
-            <a href="#" class="menu-item" onclick="openSection('scanner')">📄 Escáner Familiar</a>
-            <a href="#" class="menu-item" onclick="openSection('gastos')">💰 Control de Gastos</a>
-            <a href="#" class="menu-item" onclick="openSection('negocio')">📦 Negocio</a>
-            <a href="#" class="menu-item" onclick="openSection('diabetes')">🩺 Diabetes</a>
-            <a href="#" class="menu-item" onclick="openSection('agenda')">📅 Agenda</a>
-            <a href="#" class="menu-item" onclick="openSection('escolar')">📚 Escolar</a>
-            <a href="#" class="menu-item" onclick="openSection('recetas')">🍲 Recetas</a>
-            <a href="#" class="menu-item" onclick="openSection('tramites')">📑 Trámites</a>
-            <a href="#" class="menu-item" onclick="openSection('universidad')">🎓 Universidad</a>
-            <a href="#" class="menu-item" onclick="openSection('julisa')">🤖 Julisa IA</a>
-
-            <h3 class="menu-header">Especial</h3>
-            <a href="#" class="menu-item" onclick="openSection('artesanias')">🛍 Artesanías Rangel PRO</a>
-
-            <h3 class="menu-header">Módulos</h3>
-            <a href="#" class="menu-item" onclick="openSection('salud')">❤️ Salud</a>
-            <a href="#" class="menu-item" onclick="openSection('crecimiento')">📈 Crecimiento Económico</a>
-            <a href="#" class="menu-item" onclick="openSection('profesiones')">🧰 Profesiones</a>
-            <a href="#" class="menu-item" onclick="openSection('maestros')">📘 Maestros</a>
-            <a href="#" class="menu-item" onclick="openSection('ciencias')">🔬 Ciencias</a>
-            <a href="#" class="menu-item" onclick="openSection('adultos')">👵 Adultos Mayores</a>
-            <a href="#" class="menu-item" onclick="openSection('jovenes')">🧑‍🎓 Jóvenes</a>
-            <a href="#" class="menu-item" onclick="openSection('mamás')">👩‍🍼 Mamás</a>
-            <a href="#" class="menu-item" onclick="openSection('motivacion')">✨ Motivación</a>
-            <a href="#" class="menu-item" onclick="openSection('herramientas')">🛠 Herramientas</a>
-            <a href="#" class="menu-item" onclick="openSection('ayuda')">❓ Ayuda</a>
-        </nav>
-    </aside>
-
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="content">
-
-        <!-- INICIO -->
-        <section id="inicio" class="section active">
-            <h1>Bienvenida, Christine</h1>
-            <p>SOFIA · Familia MX está lista para tu familia en México.</p>
-
-            <div class="grid">
-                <div class="card" onclick="openSection('scanner')">📄 Escáner Familiar</div>
-                <div class="card" onclick="openSection('gastos')">💰 Control de Gastos</div>
-                <div class="card" onclick="openSection('negocio')">📦 Negocio</div>
-                <div class="card" onclick="openSection('diabetes')">🩺 Diabetes</div>
-                <div class="card" onclick="openSection('agenda')">📅 Agenda</div>
-                <div class="card" onclick="openSection('escolar')">📚 Escolar</div>
-                <div class="card" onclick="openSection('recetas')">🍲 Recetas</div>
-                <div class="card" onclick="openSection('tramites')">📑 Trámites</div>
-                <div class="card" onclick="openSection('universidad')">🎓 Universidad</div>
-                <div class="card" onclick="openSection('julisa')">🤖 Julisa IA</div>
-                <div class="card" onclick="openSection('artesanias')">🛍 Artesanías Rangel PRO</div>
-            </div>
-        </section>
-
-        <!-- SECCIONES VACÍAS (se llenan en las secciones 2–7) -->
-        <section id="scanner" class="section"></section>
-        <section id="gastos" class="section"></section>
-        <section id="negocio" class="section"></section>
-        <section id="diabetes" class="section"></section>
-        <section id="agenda" class="section"></section>
-        <section id="escolar" class="section"></section>
-        <section id="recetas" class="section"></section>
-        <section id="tramites" class="section"></section>
-        <section id="universidad" class="section"></section>
-        <section id="julisa" class="section"></section>
-        <section id="artesanias" class="section"></section>
-
-        <section id="salud" class="section"></section>
-        <section id="crecimiento" class="section"></section>
-        <section id="profesiones" class="section"></section>
-        <section id="maestros" class="section"></section>
-        <section id="ciencias" class="section"></section>
-        <section id="adultos" class="section"></section>
-        <section id="jovenes" class="section"></section>
-        <section id="mamás" class="section"></section>
-        <section id="motivacion" class="section"></section>
-        <section id="herramientas" class="section"></section>
-        <section id="ayuda" class="section"></section>
-
-    </main>
-
-    <script src="script.js"></script>
 </body>
 </html>
-<button onclick="logout()" class="btn">Cerrar sesión</button>
