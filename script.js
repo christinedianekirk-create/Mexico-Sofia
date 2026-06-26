@@ -241,15 +241,7 @@ const screens = {
         </div>
     `,
 
-    "Recetarios": `
-        <div class="title">Recetarios</div>
-
-        <div class="grid">
-            <div class="card"><h3>Postres</h3><p>Recetas dulces…</p></div>
-            <div class="card"><h3>Bolis</h3><p>Recetas frías…</p></div>
-            <div class="card"><h3>Gelatinas</h3><p>Recetas creativas…</p></div>
-        </div>
-    `,
+    "
 
     "PLR / MRR": `
         <div class="title">PLR / MRR</div>
@@ -259,7 +251,32 @@ const screens = {
             <div class="card"><h3>Pack MRR</h3><p>Derechos de reventa…</p></div>
         </div>
     `,
+"Recetarios": `
+    <div class="title">Recetarios</div>
+    <p class="section-title">Postres, bebidas, bolis, gelatinas y más</p>
 
+    <div class="grid">
+
+        <div class="card"><h3>Postres</h3><p>Pasteles, galletas, flanes, panqués y más.</p></div>
+        <div class="card"><h3>Gelatinas</h3><p>Gelatinas mosaico, de leche, de agua y gourmet.</p></div>
+        <div class="card"><h3>Bolis</h3><p>Bolis de crema, agua, frutas y sabores mexicanos.</p></div>
+        <div class="card"><h3>Bebidas</h3><p>Aguas frescas, cafés, frappés y bebidas frías.</p></div>
+        <div class="card"><h3>Mexicanos</h3><p>Recetas tradicionales de México.</p></div>
+
+        <div class="card"><h3>Desayunos</h3><p>Opciones rápidas y deliciosas.</p></div>
+        <div class="card"><h3>Comidas</h3><p>Platos fuertes fáciles de preparar.</p></div>
+        <div class="card"><h3>Cenas</h3><p>Recetas ligeras y prácticas.</p></div>
+        <div class="card"><h3>Snacks</h3><p>Botanas rápidas y económicas.</p></div>
+        <div class="card"><h3>Panadería</h3><p>Pan casero, roles, conchas y más.</p></div>
+
+        <div class="card"><h3>Saludables</h3><p>Recetas ligeras y nutritivas.</p></div>
+        <div class="card"><h3>Para Niños</h3><p>Recetas divertidas y fáciles.</p></div>
+        <div class="card"><h3>Para Fiestas</h3><p>Recetas para eventos y reuniones.</p></div>
+        <div class="card"><h3>Express</h3><p>Recetas en menos de 10 minutos.</p></div>
+        <div class="card"><h3>Especiales</h3><p>Recetas únicas y creativas.</p></div>
+
+    </div>
+`,
     "Videos Aesthetic": `
         <div class="title">Videos Aesthetic</div>
 
