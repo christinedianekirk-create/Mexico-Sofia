@@ -92,3 +92,37 @@ if (page === "motivacion") {
     <p>Frases, apoyo y ánimo para la familia.</p>
   `;
 }
+if (page === "finanzas") {
+  mainPage.innerHTML = `
+    <h2>Finanzas</h2>
+    <p>Herramientas para organizar dinero, gastos y metas.</p>
+  `;
+}
+
+if (page === "salud") {
+  mainPage.innerHTML = `
+    <h2>Salud</h2>
+    <p>Información básica, cuidados y recursos.</p>
+  `;
+}
+
+if (page === "educacion") {
+  mainPage.innerHTML = `
+    <h2>Educación</h2>
+    <p>Cursos, guías y materiales para aprender.</p>
+  `;
+}
+
+if (page === "recetas") {
+  mainPage.innerHTML = `
+    <h2>Recetas</h2>
+    <p>Comidas, postres y preparaciones fáciles.</p>
+  `;
+}
+
+if (page === "motivacion") {
+  mainPage.innerHTML = `
+    <h2>Motivación</h2>
+    <p>Frases, apoyo y ánimo para la familia.</p>
+  `;
+}
