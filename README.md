@@ -1,10 +1,10 @@
-# Proyecto MÉXICO–SOFÍA  
-Aplicación familiar para apoyar a 15 familiares en México con herramientas de:  
+# Proyecto MÉXICO–SOFÍA  un
+Aplicación familiar para apoyar a 50 familiares en México con herramientas de:  
 salud, legal, finanzas, educación, recetas, motivación, trámites, negocios y cursos.
 
 ---
-
 ## ⭐ MÓDULOS PRINCIPALES
+
 - Negocios  
 - Salud  
 - Herramientas para maestros  
@@ -14,15 +14,15 @@ salud, legal, finanzas, educación, recetas, motivación, trámites, negocios y 
 - Profesiones  
 - Cursos  
 - Búsqueda inteligente  
-- Conocimiento económico  
-- Legal protegido  
+- Crecimiento económico  
+- Legal completo
 - Actualización  
 - Universidad familiar  
 - Finanzas  
 - Reciclaje  
-
----
-
+- Julisa Costurera
+- 10 Software 
+- 1 Para Padrino Mauro
 ## ⭐ CURSOS
 - Inglés  
 - TikTok  
@@ -54,13 +54,13 @@ salud, legal, finanzas, educación, recetas, motivación, trámites, negocios y 
 - Buscador inteligente  
 - Panel secreto  
 - Actualización automática  
-- Legal protegido  
+- Legal completo
 - Asistente JULISA  
-- Comandos legales KIVO  
+- Comandos legales 
 - Autenticación simple  
 - Export Function Skeleton Raw File  
 - Guardado permanente del proyecto HOPE  
-- KIVO con nombre personalizable  
+- SOFIA con nombre personalizable  
 
 ---
 
