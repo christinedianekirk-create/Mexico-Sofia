@@ -46,3 +46,9 @@ if (page === "educacion") {
     <p>Cursos, guías y materiales para aprender.</p>
   `;
 }
+if (page === "recetas") {
+  mainPage.innerHTML = `
+    <h2>Recetas</h2>
+    <p>Comidas, postres y preparaciones fáciles.</p>
+  `;
+}
