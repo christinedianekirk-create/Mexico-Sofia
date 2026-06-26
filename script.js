@@ -1,4 +1,30 @@
-// LOGIN
+//const loginBtn = document.getElementById("login-btn");
+const loginPass = document.getElementById("login-pass");
+const loginError = document.getElementById("login-error");
+const loginScreen = document.getElementById("login-screen");
+const appContent = document.getElementById("app-content");
+
+loginBtn.addEventListener("click", () => {
+  if (loginPass.value === "12345678") {
+    loginScreen.style.display = "none";
+    appContent.style.display = "block";
+  } else {
+    loginError.textContent = "Contraseña incorrecta";
+  }
+}); const loginBtn = document.getElementById("login-btn");
+const loginPass = document.getElementById("login-pass");
+const loginError = document.getElementById("login-error");
+const loginScreen = document.getElementById("login-screen");
+const appContent = document.getElementById("app-content");
+
+loginBtn.addEventListener("click", () => {
+  if (loginPass.value === "12345678") {
+    loginScreen.style.display = "none";
+    appContent.style.display = "block";
+  } else {
+    loginError.textContent = "Contraseña incorrecta";
+  }
+});LOGIN
 const loginBtn = document.getElementById("login-btn");
 const loginPass = document.getElementById("login-pass");
 const loginError = document.getElementById("login-error");
