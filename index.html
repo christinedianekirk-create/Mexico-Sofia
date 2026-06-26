@@ -53,3 +53,113 @@
   <div class="menu-item" data-page="recetas">Recetas</div>
   <div class="menu-item" data-page="motivacion">Motivación</div>
 </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIVO Tareas Pro</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background: #6A1B9A;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: #8E24AA;
+            color: white;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 18px;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #7B1FA2;
+        }
+
+        .pin-box {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        input[type="password"] {
+            width: 80%;
+            padding: 15px;
+            font-size: 20px;
+            border-radius: 8px;
+            border: 2px solid #8E24AA;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        #error {
+            color: red;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>KIVO TAREAS PRO — ACCESO</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Ingrese su PIN de 8 dígitos</h2>
+
+        <div class="pin-box">
+            <input type="password" id="pin" maxlength="8" placeholder="********">
+            <p id="error"></p>
+            <a class="btn" onclick="verificarPIN()">Entrar</a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+function verificarPIN() {
+    const pinCorrecto = "19691972";  
+    const pinIngresado = document.getElementById("pin").value;
+
+    if (pinIngresado === pinCorrecto) {
+        window.location.href = "panel.html";
+    } else {
+        document.getElementById("error").innerText = "PIN incorrecto";
+    }
+}
+</script>
+
+</body>
+</html>
