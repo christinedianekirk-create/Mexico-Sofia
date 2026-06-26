@@ -33,3 +33,18 @@ const screens = {
             <p>Ambientes de café, lluvia, limpieza, naturaleza y más.</p>
         </div>
     `,
+<div class="card">
+        <h3>🛍️ 50 Tiendas Lovely Day</h3>
+        <p>Listas para integrarse en las siguientes pantallas.</p>
+    </div>
+
+    <div class="card">
+        <h3>📚 Cursos y Guías</h3>
+        <p>Todo organizado para tu familia en México.</p>
+    </div>
+
+    <div class="card">
+        <h3>🎧 Videos Aesthetic</h3>
+        <p>Ambientes de café, lluvia, limpieza, naturaleza y más.</p>
+    </div>
+`,
