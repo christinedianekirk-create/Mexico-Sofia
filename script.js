@@ -34,3 +34,9 @@ if (page === "finanzas") {
     <p>Herramientas para organizar dinero, gastos y metas.</p>
   `;
 }
+if (page === "salud") {
+  mainPage.innerHTML = `
+    <h2>Salud</h2>
+    <p>Información básica, cuidados y recursos.</p>
+  `;
+}
