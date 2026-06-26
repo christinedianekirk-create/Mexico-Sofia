@@ -1,5 +1,6 @@
 import FamiliaScreen from "../screens/FamiliaScreen";
 import RecetasScreen from "../screens/ResetasScreen";
+import TramitesScreen from "../screens/TramitesScreen";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import HomeScreen from "../screens/HomeScreen";
@@ -17,6 +18,7 @@ export default function AppNavigator() {
         <Stack.Screen name="Menú" component={MenuScreen} />
         <Stack.Screen name="Familia" component={FamiliaScreen} />
         <Stack.Screen name="Recetas" component={RecetasScreen} />
+        <Stack.Screen name="Trámites" component={TramitesScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
