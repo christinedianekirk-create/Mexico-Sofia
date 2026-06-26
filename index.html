@@ -1,1 +1,129 @@
+/* ================================
+   SOFIA · Familia MX
+   Estilo Slack Dark Mode
+   ================================ */
 
+/* Colores Slack */
+:root {
+    --slack-purple: #4A154B;
+    --slack-purple-dark: #350d36;
+    --slack-blue: #36C5F0;
+    --slack-green: #2EB67D;
+    --slack-yellow: #ECB22E;
+    --slack-pink: #E01E5A;
+
+    --bg-dark: #1A1D21;
+    --bg-light: #F4F5F7;
+    --text-light: #FFFFFF;
+    --text-muted: #B5B5B5;
+    --sidebar-dark: #1A1D21;
+    --sidebar-hover: #2C2F33;
+}
+
+/* ================================
+   GENERAL
+   ================================ */
+
+body.slack-dark {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: "Inter", sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+p {
+    color: var(--text-muted);
+}
+
+/* ================================
+   SIDEBAR
+   ================================ */
+
+.sidebar {
+    width: 260px;
+    background-color: var(--sidebar-dark);
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid #2C2F33;
+}
+
+.sidebar-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--slack-blue);
+    margin-bottom: 20px;
+}
+
+.menu-header {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: var(--slack-yellow);
+    text-transform: uppercase;
+}
+
+.menu-item {
+    display: block;
+    padding: 10px;
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    transition: 0.2s;
+}
+
+.menu-item:hover {
+    background-color: var(--sidebar-hover);
+}
+
+/* ================================
+   CONTENIDO PRINCIPAL
+   ================================ */
+
+.content {
+    flex: 1;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* ================================
+   TARJETAS (Cards)
+   ================================ */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #2C2F33;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    background-color: var(--slack-purple);
+}
