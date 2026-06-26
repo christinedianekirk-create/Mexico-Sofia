@@ -40,3 +40,9 @@ if (page === "salud") {
     <p>Información básica, cuidados y recursos.</p>
   `;
 }
+if (page === "educacion") {
+  mainPage.innerHTML = `
+    <h2>Educación</h2>
+    <p>Cursos, guías y materiales para aprender.</p>
+  `;
+}
