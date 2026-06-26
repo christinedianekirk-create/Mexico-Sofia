@@ -340,3 +340,61 @@ tr:hover {
     --slack-white: #FFFFFF;
     --slack-light: #F4F5F7;
 }
+/* LOGIN SLACK STYLE */
+#login-screen {
+    background-color: var(--slack-black);
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: var(--slack-purple);
+    padding: 40px;
+    border-radius: 12px;
+    width: 85%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.login-title {
+    color: var(--slack-white);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.login-sub {
+    color: var(--slack-light);
+    margin-bottom: 20px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--slack-green);
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: var(--slack-yellow);
+}
+
+.login-error {
+    color: var(--slack-pink);
+    margin-top: 10px;
+    font-weight: bold;
+}
