@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
- <script>
-const claveApp = prompt("Bienvenida a SOFÍA. Ingresa tu contraseña:");
-
-if (claveApp !== "GLORIA-ANGELES-2026") {
-    document.body.innerHTML = "<h2>Acceso denegado</h2>";
-}
-</script>
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOFÍA Web App</title>
+
+    <title>SOFÍA • Asistente Familiar Inteligente</title>
+
+    <script>
+        const claveApp = prompt("Bienvenida a SOFÍA. Ingresa tu contraseña:");
+        if (claveApp !== "GLORIA-ANGELES-2026") {
+            document.body.innerHTML = "<h2>Acceso denegado</h2>";
+        }
+    </script>
+
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- SIDEBAR ESTILO SLACK -->
+    <h1 class="titulo-app">SOFÍA — Asistente Familiar Inteligente</h1>
+
     <div class="sidebar">
         <h2 class="logo">SOFÍA</h2>
-
         <div class="menu">
             <div class="menu-item" data-screen="Inicio">🏠 Inicio</div>
             <div class="menu-item" data-screen="Tiendas Lovely Day">🛍️ Tiendas Lovely Day</div>
@@ -34,290 +35,23 @@ if (claveApp !== "GLORIA-ANGELES-2026") {
         </div>
     </div>
 
-    <!-- CONTENIDO PRINCIPAL -->
     <div class="main">
-        <h1>Bienvenida a SOFÍA</h1>
+        <h2>Bienvenida a SOFÍA</h2>
         <p>Selecciona una opción del menú para comenzar.</p>
+
+        <section id="maestros" class="modulo">
+            <h2>Herramientas para Maestros</h2>
+            <p>Material educativo desde Kínder hasta Preparatoria.</p>
+            <div class="niveles">
+                <button onclick="mostrarNivel('kinder')">Kínder</button>
+                <button onclick="mostrarNivel('primaria')">Primaria</button>
+                <button onclick="mostrarNivel('secundaria')">Secundaria</button>
+                <button onclick="mostrarNivel('prepa')">Preparatoria</button>
+            </div>
+            <div id="contenido-nivel"></div>
+        </section>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-<section id="maestros" class="modulo">
-    <h2>Herramientas para Maestros</h2>
-    <p>Material educativo desde Kínder hasta Preparatoria.</p>
-
-    <div class="niveles">
-        <button onclick="mostrarNivel('kinder')">Kínder</button>
-        <button onclick="mostrarNivel('primaria')">Primaria</button>
-        <button onclick="mostrarNivel('secundaria')">Secundaria</button>
-        <button onclick="mostrarNivel('prepa')">Preparatoria</button>
-    </div>
-
-    <div id="contenido-nivel"></div>
-</section>
-function mostrarNivel(nivel) {
-    const contenido = {
-        kinder: `
-            <h3>Kínder</h3>
-            <ul>
-                <li>Colores y figuras</li>
-                <li>Trazos básicos</li>
-                <li>Vocales y consonantes</li>
-                <li>Actividades de motricidad fina</li>
-                <li>Cuadernillos imprimibles</li>
-            </ul>
-        `,
-        primaria: `
-            <h3>Primaria</h3>
-            <ul>
-                <li>Lectura y comprensión</li>
-                <li>Sumas, restas, multiplicaciones y divisiones</li>
-                <li>Mapas de México y del mundo</li>
-                <li>Ciencias naturales</li>
-                <li>Historia de México</li>
-            </ul>
-        `,
-        secundaria: `
-            <h3>Secundaria</h3>
-            <ul>
-                <li>Álgebra básica</li>
-                <li>Biología y química</li>
-                <li>Geografía</li>
-                <li>Historia universal</li>
-                <li>Redacción y ortografía</li>
-            </ul>
-        `,
-        prepa: `
-            <h3>Preparatoria</h3>
-            <ul>
-                <li>Cálculo básico</li>
-                <li>Física</li>
-                <li>Química avanzada</li>
-                <li>Literatura</li>
-                <li>Preparación para universidad</li>
-            </ul>
-        `
-    };
-
-    document.getElementById("contenido-nivel").innerHTML = contenido[nivel];
-}
-#maestros {
-    padding: 20px;
-}
-
-.niveles button {
-    margin: 5px;
-    padding: 10px 15px;
-    background: #0077cc;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.niveles button:hover {
-    background: #005fa3;
-}
-
-#contenido-nivel {
-    margin-top: 20px;
-    padding: 15px;
-    background: #f4f4f4;
-    border-radius: 8px;
-}
-<section id="ingles" class="modulo">
-    <h2>Inglés para Toda la Familia</h2>
-    <p>Aprende inglés desde cero con videos, tareas y ejercicios.</p>
-
-    <div class="niveles-ingles">
-        <button onclick="mostrarIngles('kinder')">Kínder</button>
-        <button onclick="mostrarIngles('primaria')">Primaria</button>
-        <button onclick="mostrarIngles('secundaria')">Secundaria</button>
-        <button onclick="mostrarIngles('prepa')">Preparatoria</button>
-        <button onclick="mostrarIngles('adultos')">Adultos</button>
-    </div>
-
-    <div id="contenido-ingles"></div>
-</section>
-<section id="finanzas" class="modulo">
-    <h2>Finanzas para la Familia</h2>
-    <p>Aprende a manejar dinero, ahorrar, salir de deudas y mejorar ingresos.</p>
-
-    <div class="finanzas-menu">
-        <button onclick="mostrarFinanzas('ahorro')">Ahorro</button>
-        <button onclick="mostrarFinanzas('deudas')">Deudas</button>
-        <button onclick="mostrarFinanzas('gastos')">Gastos</button>
-        <button onclick="mostrarFinanzas('ingresos')">Ingresos</button>
-        <button onclick="mostrarFinanzas('metas')">Metas</button>
-    </div>
-
-    <div id="contenido-finanzas"></div>
-</section>
-<section id="salud" class="modulo">
-    <h2>Salud para la Familia</h2>
-    <p>Guías simples de salud, primeros auxilios y cuidados básicos.</p>
-
-    <div class="salud-menu">
-        <button onclick="mostrarSalud('primeros')">Primeros Auxilios</button>
-        <button onclick="mostrarSalud('sintomas')">Síntomas Comunes</button>
-        <button onclick="mostrarSalud('ninos')">Niños</button>
-        <button onclick="mostrarSalud('adultos')">Adultos</button>
-        <button onclick="mostrarSalud('emergencias')">Emergencias</button>
-    </div>
-
-    <div id="contenido-salud"></div>
-</section>
-<section id="manualidades" class="modulo">
-    <h2>Manualidades para la Familia</h2>
-    <p>Ideas fáciles, bonitas y económicas para hacer en casa.</p>
-
-    <div class="manualidades-menu">
-        <button onclick="mostrarManualidades('ninos')">Niños</button>
-        <button onclick="mostrarManualidades('hogar')">Hogar</button>
-        <button onclick="mostrarManualidades('reciclaje')">Reciclaje</button>
-        <button onclick="mostrarManualidades('venta')">Para Vender</button>
-        <button onclick="mostrarManualidades('fiestas')">Fiestas</button>
-    </div>
-
-    <div id="contenido-manualidades"></div>
-</section>
-<section id="costura" class="modulo">
-    <h2>Costura – Tía Julisa</h2>
-    <p>Guías, técnicas y proyectos de costura para aprender y trabajar desde casa.</p>
-
-    <div class="costura-menu">
-        <button onclick="mostrarCostura('basico')">Básico</button>
-        <button onclick="mostrarCostura('maquina')">Máquina de Coser</button>
-        <button onclick="mostrarCostura('prendas')">Prendas</button>
-        <button onclick="mostrarCostura('arreglos')">Arreglos</button>
-        <button onclick="mostrarCostura('negocio')">Negocio de Costura</button>
-    </div>
-
-    <div id="contenido-costura"></div>
-</section>
-<section id="tramites" class="modulo">
-    <h2>Trámites en México</h2>
-    <p>Guías simples para realizar trámites importantes sin complicaciones.</p>
-
-    <div class="tramites-menu">
-        <button onclick="mostrarTramites('curp')">CURP</button>
-        <button onclick="mostrarTramites('actas')">Actas</button>
-        <button onclick="mostrarTramites('ine')">INE</button>
-        <button onclick="mostrarTramites('imss')">IMSS</button>
-        <button onclick="mostrarTramites('citas')">Citas en Línea</button>
-    </div>
-
-    <div id="contenido-tramites"></div>
-</section>
-<section id="recetas" class="modulo">
-    <h2>Recetas Familiares</h2>
-    <p>Postres, nieves, bolis y aguas frescas fáciles y económicas.</p>
-
-    <div class="recetas-menu">
-        <button onclick="mostrarRecetas('postres')">Postres</button>
-        <button onclick="mostrarRecetas('nieves')">Nieves</button>
-        <button onclick="mostrarRecetas('bolis')">Bolis</button>
-        <button onclick="mostrarRecetas('aguas')">Aguas Frescas</button>
-        <button onclick="mostrarRecetas('ventas')">Para Vender</button>
-    </div>
-
-    <div id="contenido-recetas"></div>
-</section>
-<section id="psicologia" class="modulo">
-    <h2>Psicología Familiar</h2>
-    <p>Apoyo emocional, autoestima, motivación y bienestar para toda la familia.</p>
-
-    <div class="psico-menu">
-        <button onclick="mostrarPsico('emociones')">Emociones</button>
-        <button onclick="mostrarPsico('autoestima')">Autoestima</button>
-        <button onclick="mostrarPsico('ansiedad')">Ansiedad</button>
-        <button onclick="mostrarPsico('familia')">Familia</button>
-        <button onclick="mostrarPsico('motivacion')">Motivación</button>
-    </div>
-
-    <div id="contenido-psico"></div>
-</section>
-<section id="profesiones" class="modulo">
-    <h2>Profesiones y Oficios</h2>
-    <p>Guías simples para aprender oficios y trabajos que generan ingresos.</p>
-
-    <div class="profesiones-menu">
-        <button onclick="mostrarProfesiones('oficios')">Oficios</button>
-        <button onclick="mostrarProfesiones('servicios')">Servicios</button>
-        <button onclick="mostrarProfesiones('digital')">Digital</button>
-        <button onclick="mostrarProfesiones('emprender')">Emprender</button>
-        <button onclick="mostrarProfesiones('habilidades')">Habilidades</button>
-    </div>
-
-    <div id="contenido-profesiones"></div>
-</section>
-<section id="cursos" class="modulo">
-    <h2>Cursos para la Familia</h2>
-    <p>Cursos simples, prácticos y explicados paso a paso.</p>
-
-    <div class="cursos-menu">
-        <button onclick="mostrarCursos('computacion')">Computación</button>
-        <button onclick="mostrarCursos('ingles')">Inglés</button>
-        <button onclick="mostrarCursos('cocina')">Cocina</button>
-        <button onclick="mostrarCursos('costura')">Costura</button>
-        <button onclick="mostrarCursos('ventas')">Ventas</button>
-    </div>
-
-    <div id="contenido-cursos"></div>
-</section>
-<section id="legal" class="modulo">
-    <h2>Guía Legal Familiar</h2>
-    <p>Información legal explicada de forma simple para ayudar a tu familia.</p>
-
-    <div class="legal-menu">
-        <button onclick="mostrarLegal('derechos')">Derechos</button>
-        <button onclick="mostrarLegal('documentos')">Documentos</button>
-        <button onclick="mostrarLegal('contratos')">Contratos</button>
-        <button onclick="mostrarLegal('denuncias')">Denuncias</button>
-        <button onclick="mostrarLegal('familia')">Familia</button>
-    </div>
-
-    <div id="contenido-legal"></div>
-</section>
-<section id="busqueda" class="modulo">
-    <h2>Búsqueda Inteligente</h2>
-    <p>Escribe lo que buscas y SOFÍA te lo encuentra.</p>
-
-    <input 
-        type="text" 
-        id="buscador" 
-        placeholder="Buscar recetas, trámites, salud, inglés, costura..."
-        oninput="buscarContenido()"
-    >
-
-    <div id="resultados-busqueda"></div>
-</section>
-<section id="economia" class="modulo">
-    <h2>Crecimiento Económico Familiar</h2>
-    <p>Ideas, estrategias y caminos para mejorar los ingresos de la familia.</p>
-
-    <div class="economia-menu">
-        <button onclick="mostrarEconomia('ideas')">Ideas de Negocio</button>
-        <button onclick="mostrarEconomia('ventas')">Ventas</button>
-        <button onclick="mostrarEconomia('ahorro')">Ahorro Inteligente</button>
-        <button onclick="mostrarEconomia('hogar')">Ingresos desde Casa</button>
-        <button onclick="mostrarEconomia('digital')">Ingresos Digitales</button>
-    </div>
-
-    <div id="contenido-economia"></div>
-</section>
-<section id="universidad" class="modulo">
-    <h2>Universidad Familiar</h2>
-    <p>Aprendizaje continuo para toda la familia, desde niños hasta adultos.</p>
-
-    <div class="uni-menu">
-        <button onclick="mostrarUni('habilidades')">Habilidades</button>
-        <button onclick="mostrarUni('vida')">Vida Diaria</button>
-        <button onclick="mostrarUni('trabajo')">Trabajo</button>
-        <button onclick="mostrarUni('emocional')">Crecimiento Emocional</button>
-        <button onclick="mostrarUni('futuro')">Plan para el Futuro</button>
-    </div>
-
-    <div id="contenido-uni"></div>
-</section>
