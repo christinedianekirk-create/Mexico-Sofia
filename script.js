@@ -562,3 +562,59 @@ function mostrarProfesiones(seccion) {
 
     document.getElementById("contenido-profesiones").innerHTML = contenido[seccion];
 }
+function mostrarCursos(seccion) {
+    const contenido = {
+        computacion: `
+            <h3>Computación</h3>
+            <ul>
+                <li>Encender y apagar computadora</li>
+                <li>Cómo usar el mouse</li>
+                <li>Cómo escribir más rápido</li>
+                <li>Cómo usar WhatsApp Web</li>
+                <li>Cómo usar Google y buscar información</li>
+            </ul>
+        `,
+        ingles: `
+            <h3>Inglés</h3>
+            <ul>
+                <li>Saludos básicos</li>
+                <li>Frases comunes</li>
+                <li>Vocabulario diario</li>
+                <li>Pronunciación simple</li>
+                <li>Conversaciones cortas</li>
+            </ul>
+        `,
+        cocina: `
+            <h3>Cocina</h3>
+            <ul>
+                <li>Cómo cocinar arroz perfecto</li>
+                <li>Cómo hacer tortillas caseras</li>
+                <li>Cómo preparar salsas básicas</li>
+                <li>Cómo cocinar frijoles sin que se quemen</li>
+                <li>Recetas fáciles para vender</li>
+            </ul>
+        `,
+        costura: `
+            <h3>Costura</h3>
+            <ul>
+                <li>Cómo usar la máquina</li>
+                <li>Cómo cortar tela</li>
+                <li>Cómo hacer bastilla</li>
+                <li>Cómo hacer una falda sencilla</li>
+                <li>Cómo reparar ropa</li>
+            </ul>
+        `,
+        ventas: `
+            <h3>Ventas</h3>
+            <ul>
+                <li>Cómo vender sin pena</li>
+                <li>Cómo hablar con clientes</li>
+                <li>Cómo calcular precios</li>
+                <li>Cómo entregar productos bonitos</li>
+                <li>Cómo conseguir más clientes</li>
+            </ul>
+        `
+    };
+
+    document.getElementById("contenido-cursos").innerHTML = contenido[seccion];
+}
