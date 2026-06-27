@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>SOFÍA • Asistente Familiar Inteligente</title>
 
+    <!-- Protección con contraseña -->
     <script>
-        const claveApp = prompt("Bienvenida a SOFÍA. Ingresa tu contraseña:");
+        const claveApp = prompt("Bienvenida a SOFÍA.\nIngresa tu contraseña:");
         if (claveApp !== "GLORIA-ANGELES-2026") {
             document.body.innerHTML = "<h2>Acceso denegado</h2>";
         }
@@ -15,12 +15,15 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <h1 class="titulo-app">SOFÍA — Asistente Familiar Inteligente</h1>
 
+    <!-- Sidebar -->
     <div class="sidebar">
         <h2 class="logo">SOFÍA</h2>
+
         <div class="menu">
             <div class="menu-item" data-screen="Inicio">🏠 Inicio</div>
             <div class="menu-item" data-screen="Tiendas Lovely Day">🛍️ Tiendas Lovely Day</div>
@@ -35,21 +38,26 @@
         </div>
     </div>
 
-  <button onclick="activarJulisa()">🎤 Activar Julisa</button>
-   <div class="main">
+    <!-- Botón de voz Julisa -->
+    <button onclick="activarJulisa()">🎤 Activar Julisa</button>
+
+    <!-- Pantalla principal -->
+    <div class="main">
         <h2>Bienvenida a SOFÍA</h2>
         <p>Selecciona una opción del menú para comenzar.</p>
 
-
+        <!-- Módulo de maestros -->
         <section id="maestros" class="modulo">
             <h2>Herramientas para Maestros</h2>
             <p>Material educativo desde Kínder hasta Preparatoria.</p>
+
             <div class="niveles">
                 <button onclick="mostrarNivel('kinder')">Kínder</button>
                 <button onclick="mostrarNivel('primaria')">Primaria</button>
                 <button onclick="mostrarNivel('secundaria')">Secundaria</button>
                 <button onclick="mostrarNivel('prepa')">Preparatoria</button>
             </div>
+
             <div id="contenido-nivel"></div>
         </section>
     </div>
