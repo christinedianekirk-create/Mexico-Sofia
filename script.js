@@ -114,3 +114,59 @@ function mostrarIngles(nivel) {
 
     document.getElementById("contenido-ingles").innerHTML = contenido[nivel];
 }
+function mostrarFinanzas(seccion) {
+    const contenido = {
+        ahorro: `
+            <h3>Ahorro</h3>
+            <ul>
+                <li>Cómo ahorrar con ingresos bajos</li>
+                <li>Regla 50/30/20 adaptada a México</li>
+                <li>Reto de ahorro semanal</li>
+                <li>Reto de ahorro de monedas</li>
+                <li>Cómo crear un fondo de emergencia</li>
+            </ul>
+        `,
+        deudas: `
+            <h3>Deudas</h3>
+            <ul>
+                <li>Método bola de nieve</li>
+                <li>Método avalancha</li>
+                <li>Cómo negociar deudas</li>
+                <li>Errores que causan más deudas</li>
+                <li>Cómo dejar de pedir prestado</li>
+            </ul>
+        `,
+        gastos: `
+            <h3>Gastos</h3>
+            <ul>
+                <li>Cómo controlar gastos diarios</li>
+                <li>Lista de gastos hormiga</li>
+                <li>Cómo hacer un presupuesto simple</li>
+                <li>Gastos necesarios vs innecesarios</li>
+                <li>Plantilla de presupuesto familiar</li>
+            </ul>
+        `,
+        ingresos: `
+            <h3>Ingresos</h3>
+            <ul>
+                <li>Ideas de ingresos extra en México</li>
+                <li>Negocios pequeños desde casa</li>
+                <li>Cómo vender sin invertir</li>
+                <li>Cómo usar habilidades para ganar dinero</li>
+                <li>Ingresos digitales simples</li>
+            </ul>
+        `,
+        metas: `
+            <h3>Metas</h3>
+            <ul>
+                <li>Cómo crear metas financieras reales</li>
+                <li>Metas a corto, mediano y largo plazo</li>
+                <li>Cómo medir tu progreso</li>
+                <li>Errores que frenan tus metas</li>
+                <li>Plan familiar de 12 meses</li>
+            </ul>
+        `
+    };
+
+    document.getElementById("contenido-finanzas").innerHTML = contenido[seccion];
+}
