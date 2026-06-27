@@ -49,3 +49,73 @@
 
     <div id="contenido-nivel"></div>
 </section>
+function mostrarNivel(nivel) {
+    const contenido = {
+        kinder: `
+            <h3>Kínder</h3>
+            <ul>
+                <li>Colores y figuras</li>
+                <li>Trazos básicos</li>
+                <li>Vocales y consonantes</li>
+                <li>Actividades de motricidad fina</li>
+                <li>Cuadernillos imprimibles</li>
+            </ul>
+        `,
+        primaria: `
+            <h3>Primaria</h3>
+            <ul>
+                <li>Lectura y comprensión</li>
+                <li>Sumas, restas, multiplicaciones y divisiones</li>
+                <li>Mapas de México y del mundo</li>
+                <li>Ciencias naturales</li>
+                <li>Historia de México</li>
+            </ul>
+        `,
+        secundaria: `
+            <h3>Secundaria</h3>
+            <ul>
+                <li>Álgebra básica</li>
+                <li>Biología y química</li>
+                <li>Geografía</li>
+                <li>Historia universal</li>
+                <li>Redacción y ortografía</li>
+            </ul>
+        `,
+        prepa: `
+            <h3>Preparatoria</h3>
+            <ul>
+                <li>Cálculo básico</li>
+                <li>Física</li>
+                <li>Química avanzada</li>
+                <li>Literatura</li>
+                <li>Preparación para universidad</li>
+            </ul>
+        `
+    };
+
+    document.getElementById("contenido-nivel").innerHTML = contenido[nivel];
+}
+#maestros {
+    padding: 20px;
+}
+
+.niveles button {
+    margin: 5px;
+    padding: 10px 15px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.niveles button:hover {
+    background: #005fa3;
+}
+
+#contenido-nivel {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
