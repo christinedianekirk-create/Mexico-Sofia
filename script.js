@@ -830,3 +830,23 @@ function mostrarUni(seccion) {
 
     document.getElementById("contenido-uni").innerHTML = contenido[seccion];
 }
+// AUTO‑UPDATE – SOFÍA JULISA
+// Fuerza a cargar siempre la versión más nueva del sitio
+
+(function() {
+    const version = Date.now(); // Genera una versión única cada carga
+    const links = document.querySelectorAll("link[rel='stylesheet'], script");
+
+    links.forEach(link => {
+        const url = link.getAttribute("href") || link.getAttribute("src");
+        if (!url) return;
+
+        const newUrl = url.split("?")[0] + "?v=" + version;
+
+        if (link.tagName === "LINK") {
+            link.setAttribute("href", newUrl);
+        } else if (link.tagName === "SCRIPT") {
+            link.setAttribute("src", newUrl);
+        }
+    });
+})();
