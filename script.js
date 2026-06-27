@@ -53,3 +53,64 @@ menuItems.forEach(item => {
         main.innerHTML = screens[screen] || "<h1>Pantalla no encontrada</h1>";
     });
 });
+function mostrarIngles(nivel) {
+    const contenido = {
+        kinder: `
+            <h3>Kínder</h3>
+            <ul>
+                <li>Colores en inglés</li>
+                <li>Animales</li>
+                <li>Números del 1 al 20</li>
+                <li>Saludos básicos</li>
+                <li>Canciones cortas</li>
+                <li>Videos para repetir palabras</li>
+            </ul>
+        `,
+        primaria: `
+            <h3>Primaria</h3>
+            <ul>
+                <li>Vocabulario básico</li>
+                <li>Frases comunes</li>
+                <li>Lecturas cortas</li>
+                <li>Ejercicios de listening</li>
+                <li>Videos con pronunciación</li>
+                <li>Tareas imprimibles</li>
+            </ul>
+        `,
+        secundaria: `
+            <h3>Secundaria</h3>
+            <ul>
+                <li>Gramática básica</li>
+                <li>Conversaciones reales</li>
+                <li>Lecturas más largas</li>
+                <li>Listening intermedio</li>
+                <li>Pronunciación guiada</li>
+                <li>Ejercicios de escritura</li>
+            </ul>
+        `,
+        prepa: `
+            <h3>Preparatoria</h3>
+            <ul>
+                <li>Gramática intermedia</li>
+                <li>Conversación fluida</li>
+                <li>Lecturas avanzadas</li>
+                <li>Comprensión auditiva avanzada</li>
+                <li>Redacción formal</li>
+                <li>Preparación para entrevistas</li>
+            </ul>
+        `,
+        adultos: `
+            <h3>Adultos</h3>
+            <ul>
+                <li>Inglés para el trabajo</li>
+                <li>Inglés para trámites</li>
+                <li>Inglés para viajar</li>
+                <li>Inglés para negocios</li>
+                <li>Conversación práctica</li>
+                <li>Videos paso a paso</li>
+            </ul>
+        `
+    };
+
+    document.getElementById("contenido-ingles").innerHTML = contenido[nivel];
+}
