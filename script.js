@@ -394,3 +394,59 @@ function mostrarTramites(seccion) {
 
     document.getElementById("contenido-tramites").innerHTML = contenido[seccion];
 }
+function mostrarRecetas(seccion) {
+    const contenido = {
+        postres: `
+            <h3>Postres</h3>
+            <ul>
+                <li>Gelatina mosaico</li>
+                <li>Arroz con leche</li>
+                <li>Flan casero</li>
+                <li>Pay de limón</li>
+                <li>Pastel frío de galleta</li>
+            </ul>
+        `,
+        nieves: `
+            <h3>Nieves</h3>
+            <ul>
+                <li>Nieve de limón</li>
+                <li>Nieve de mango</li>
+                <li>Nieve de fresa</li>
+                <li>Nieve de coco</li>
+                <li>Nieve de tamarindo</li>
+            </ul>
+        `,
+        bolis: `
+            <h3>Bolis</h3>
+            <ul>
+                <li>Bolis de rompope</li>
+                <li>Bolis de chocolate</li>
+                <li>Bolis de fresa con leche</li>
+                <li>Bolis de mango natural</li>
+                <li>Bolis de café</li>
+            </ul>
+        `,
+        aguas: `
+            <h3>Aguas Frescas</h3>
+            <ul>
+                <li>Agua de horchata</li>
+                <li>Agua de jamaica</li>
+                <li>Agua de limón con chia</li>
+                <li>Agua de melón</li>
+                <li>Agua de piña</li>
+            </ul>
+        `,
+        ventas: `
+            <h3>Recetas para Vender</h3>
+            <ul>
+                <li>Gelatinas individuales</li>
+                <li>Bolis gourmet</li>
+                <li>Nieves en vasito</li>
+                <li>Pay de limón por porción</li>
+                <li>Aguas frescas por litro</li>
+            </ul>
+        `
+    };
+
+    document.getElementById("contenido-recetas").innerHTML = contenido[seccion];
+}
