@@ -226,3 +226,59 @@ function mostrarSalud(seccion) {
 
     document.getElementById("contenido-salud").innerHTML = contenido[seccion];
 }
+function mostrarManualidades(seccion) {
+    const contenido = {
+        ninos: `
+            <h3>Manualidades para Niños</h3>
+            <ul>
+                <li>Figuras con palitos de madera</li>
+                <li>Pintura con esponjas</li>
+                <li>Máscaras de animales</li>
+                <li>Tarjetas para mamá y papá</li>
+                <li>Juguetes con cartón</li>
+            </ul>
+        `,
+        hogar: `
+            <h3>Manualidades para el Hogar</h3>
+            <ul>
+                <li>Portavelas decorativos</li>
+                <li>Cuadros minimalistas</li>
+                <li>Macetas pintadas a mano</li>
+                <li>Organizadores económicos</li>
+                <li>Decoración con listones</li>
+            </ul>
+        `,
+        reciclaje: `
+            <h3>Reciclaje Creativo</h3>
+            <ul>
+                <li>Macetas con botellas</li>
+                <li>Flores con cucharas</li>
+                <li>Organizadores con latas</li>
+                <li>Porta lápices con tubos</li>
+                <li>Decoración con cartón</li>
+            </ul>
+        `,
+        venta: `
+            <h3>Manualidades para Vender</h3>
+            <ul>
+                <li>Velas aromáticas</li>
+                <li>Llaveros personalizados</li>
+                <li>Pulseras y collares</li>
+                <li>Arreglos florales</li>
+                <li>Decoración para fiestas</li>
+            </ul>
+        `,
+        fiestas: `
+            <h3>Decoración para Fiestas</h3>
+            <ul>
+                <li>Centros de mesa</li>
+                <li>Banderines y letreros</li>
+                <li>Globos decorados</li>
+                <li>Piñatas pequeñas</li>
+                <li>Recuerditos económicos</li>
+            </ul>
+        `
+    };
+
+    document.getElementById("contenido-manualidades").innerHTML = contenido[seccion];
+}
