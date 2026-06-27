@@ -506,3 +506,59 @@ function mostrarPsico(seccion) {
 
     document.getElementById("contenido-psico").innerHTML = contenido[seccion];
 }
+function mostrarProfesiones(seccion) {
+    const contenido = {
+        oficios: `
+            <h3>Oficios</h3>
+            <ul>
+                <li>Carpintería básica</li>
+                <li>Electricidad doméstica</li>
+                <li>Plomería simple</li>
+                <li>Costura profesional</li>
+                <li>Reparación de electrodomésticos</li>
+            </ul>
+        `,
+        servicios: `
+            <h3>Servicios</h3>
+            <ul>
+                <li>Limpieza profesional</li>
+                <li>Cuidado de niños</li>
+                <li>Cuidado de adultos mayores</li>
+                <li>Repostería por encargo</li>
+                <li>Decoración de eventos</li>
+            </ul>
+        `,
+        digital: `
+            <h3>Trabajos Digitales</h3>
+            <ul>
+                <li>Ventas por internet</li>
+                <li>Redacción básica</li>
+                <li>Diseño simple</li>
+                <li>Atención al cliente</li>
+                <li>Marketing básico</li>
+            </ul>
+        `,
+        emprender: `
+            <h3>Emprender</h3>
+            <ul>
+                <li>Cómo iniciar un negocio pequeño</li>
+                <li>Cómo calcular precios</li>
+                <li>Cómo conseguir clientes</li>
+                <li>Cómo promocionarte</li>
+                <li>Errores comunes al emprender</li>
+            </ul>
+        `,
+        habilidades: `
+            <h3>Habilidades Importantes</h3>
+            <ul>
+                <li>Comunicación</li>
+                <li>Organización</li>
+                <li>Trabajo en equipo</li>
+                <li>Responsabilidad</li>
+                <li>Aprender rápido</li>
+            </ul>
+        `
+    };
+
+    document.getElementById("contenido-profesiones").innerHTML = contenido[seccion];
+}
