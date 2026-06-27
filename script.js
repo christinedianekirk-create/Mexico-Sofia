@@ -170,3 +170,59 @@ function mostrarFinanzas(seccion) {
 
     document.getElementById("contenido-finanzas").innerHTML = contenido[seccion];
 }
+function mostrarSalud(seccion) {
+    const contenido = {
+        primeros: `
+            <h3>Primeros Auxilios</h3>
+            <ul>
+                <li>Qué hacer en caso de fiebre</li>
+                <li>Cómo detener una hemorragia</li>
+                <li>Qué hacer en caso de desmayo</li>
+                <li>Cómo actuar ante una quemadura</li>
+                <li>Botiquín básico familiar</li>
+            </ul>
+        `,
+        sintomas: `
+            <h3>Síntomas Comunes</h3>
+            <ul>
+                <li>Dolor de cabeza</li>
+                <li>Dolor de estómago</li>
+                <li>Tos y gripe</li>
+                <li>Vómito y diarrea</li>
+                <li>Cuándo ir al doctor</li>
+            </ul>
+        `,
+        ninos: `
+            <h3>Niños</h3>
+            <ul>
+                <li>Fiebre en niños</li>
+                <li>Golpes y caídas</li>
+                <li>Deshidratación</li>
+                <li>Vacunas importantes</li>
+                <li>Señales de alerta</li>
+            </ul>
+        `,
+        adultos: `
+            <h3>Adultos</h3>
+            <ul>
+                <li>Presión alta</li>
+                <li>Diabetes</li>
+                <li>Dolor de pecho</li>
+                <li>Problemas respiratorios</li>
+                <li>Cuidados preventivos</li>
+            </ul>
+        `,
+        emergencias: `
+            <h3>Emergencias</h3>
+            <ul>
+                <li>Números de emergencia en México</li>
+                <li>Qué hacer en un accidente</li>
+                <li>Cómo actuar ante un incendio</li>
+                <li>Cómo ayudar a un adulto mayor</li>
+                <li>Plan familiar de emergencia</li>
+            </ul>
+        `
+    };
+
+    document.getElementById("contenido-salud").innerHTML = contenido[seccion];
+}
