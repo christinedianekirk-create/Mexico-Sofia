@@ -338,3 +338,59 @@ function mostrarCostura(seccion) {
 
     document.getElementById("contenido-costura").innerHTML = contenido[seccion];
 }
+function mostrarTramites(seccion) {
+    const contenido = {
+        curp: `
+            <h3>CURP</h3>
+            <ul>
+                <li>Cómo consultar tu CURP</li>
+                <li>Cómo imprimirla gratis</li>
+                <li>Qué hacer si aparece incorrecta</li>
+                <li>CURP para niños</li>
+                <li>CURP para adultos mayores</li>
+            </ul>
+        `,
+        actas: `
+            <h3>Actas</h3>
+            <ul>
+                <li>Acta de nacimiento</li>
+                <li>Acta de matrimonio</li>
+                <li>Acta de defunción</li>
+                <li>Cómo descargarlas en línea</li>
+                <li>Errores comunes y cómo corregirlos</li>
+            </ul>
+        `,
+        ine: `
+            <h3>INE</h3>
+            <ul>
+                <li>Cómo sacar tu INE por primera vez</li>
+                <li>Reposición por robo o extravío</li>
+                <li>Cambio de domicilio</li>
+                <li>Requisitos para cada trámite</li>
+                <li>Cómo agendar cita</li>
+            </ul>
+        `,
+        imss: `
+            <h3>IMSS</h3>
+            <ul>
+                <li>Cómo sacar número de seguro social</li>
+                <li>Cómo imprimir comprobante</li>
+                <li>Cómo registrarte en clínica</li>
+                <li>Cómo cambiar de clínica</li>
+                <li>Cómo consultar semanas cotizadas</li>
+            </ul>
+        `,
+        citas: `
+            <h3>Citas en Línea</h3>
+            <ul>
+                <li>Citas para INE</li>
+                <li>Citas para actas</li>
+                <li>Citas para pasaporte</li>
+                <li>Citas para IMSS</li>
+                <li>Cómo evitar errores al agendar</li>
+            </ul>
+        `
+    };
+
+    document.getElementById("contenido-tramites").innerHTML = contenido[seccion];
+}
