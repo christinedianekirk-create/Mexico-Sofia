@@ -618,3 +618,59 @@ function mostrarCursos(seccion) {
 
     document.getElementById("contenido-cursos").innerHTML = contenido[seccion];
 }
+function mostrarLegal(seccion) {
+    const contenido = {
+        derechos: `
+            <h3>Derechos</h3>
+            <ul>
+                <li>Derechos laborales básicos</li>
+                <li>Derechos de inquilinos</li>
+                <li>Derechos de mujeres</li>
+                <li>Derechos de adultos mayores</li>
+                <li>Derechos en detenciones</li>
+            </ul>
+        `,
+        documentos: `
+            <h3>Documentos Importantes</h3>
+            <ul>
+                <li>Actas (nacimiento, matrimonio, defunción)</li>
+                <li>CURP</li>
+                <li>INE</li>
+                <li>Comprobantes oficiales</li>
+                <li>Cartas poder simples</li>
+            </ul>
+        `,
+        contratos: `
+            <h3>Contratos</h3>
+            <ul>
+                <li>Contrato de renta</li>
+                <li>Contrato de préstamo</li>
+                <li>Contrato de compra-venta</li>
+                <li>Contrato de trabajo</li>
+                <li>Qué revisar antes de firmar</li>
+            </ul>
+        `,
+        denuncias: `
+            <h3>Denuncias</h3>
+            <ul>
+                <li>Cómo denunciar violencia</li>
+                <li>Cómo denunciar fraude</li>
+                <li>Cómo denunciar robo</li>
+                <li>Dónde denunciar</li>
+                <li>Qué pruebas necesitas</li>
+            </ul>
+        `,
+        familia: `
+            <h3>Asuntos Familiares</h3>
+            <ul>
+                <li>Pensión alimenticia</li>
+                <li>Custodia de menores</li>
+                <li>Divorcio</li>
+                <li>Herencias</li>
+                <li>Testamentos</li>
+            </ul>
+        `
+    };
+
+    document.getElementById("contenido-legal").innerHTML = contenido[seccion];
+}
