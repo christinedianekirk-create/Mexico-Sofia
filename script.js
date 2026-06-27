@@ -282,3 +282,59 @@ function mostrarManualidades(seccion) {
 
     document.getElementById("contenido-manualidades").innerHTML = contenido[seccion];
 }
+function mostrarCostura(seccion) {
+    const contenido = {
+        basico: `
+            <h3>Costura Básica</h3>
+            <ul>
+                <li>Cómo enhebrar una aguja</li>
+                <li>Puntada recta</li>
+                <li>Puntada invisible</li>
+                <li>Cómo rematar correctamente</li>
+                <li>Tipos de telas y para qué sirven</li>
+            </ul>
+        `,
+        maquina: `
+            <h3>Manejo de Máquina de Coser</h3>
+            <ul>
+                <li>Cómo enhebrar la máquina</li>
+                <li>Cómo ajustar tensión</li>
+                <li>Cómo cambiar la aguja</li>
+                <li>Cómo hacer puntada recta y zigzag</li>
+                <li>Mantenimiento básico</li>
+            </ul>
+        `,
+        prendas: `
+            <h3>Prendas</h3>
+            <ul>
+                <li>Faldas sencillas</li>
+                <li>Blusas básicas</li>
+                <li>Pantalones ligeros</li>
+                <li>Shorts para niños</li>
+                <li>Mandiles y batas</li>
+            </ul>
+        `,
+        arreglos: `
+            <h3>Arreglos</h3>
+            <ul>
+                <li>Subir bastilla</li>
+                <li>Ajustar cintura</li>
+                <li>Arreglar cierres</li>
+                <li>Reparar rasgaduras</li>
+                <li>Ajustes de uniformes</li>
+            </ul>
+        `,
+        negocio: `
+            <h3>Negocio de Costura</h3>
+            <ul>
+                <li>Cómo cobrar por trabajo</li>
+                <li>Cómo calcular costos</li>
+                <li>Cómo conseguir clientes</li>
+                <li>Ideas de productos para vender</li>
+                <li>Cómo entregar trabajos profesionales</li>
+            </ul>
+        `
+    };
+
+    document.getElementById("contenido-costura").innerHTML = contenido[seccion];
+}
