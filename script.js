@@ -888,3 +888,35 @@ function abrirSoftwares12() {
         mostrarSeccion("softwares12");
     }
 }
+// --- JULISSA ASISTENTE DE VOZ ---
+
+window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+const julissa = new SpeechRecognition();
+julissa.lang = "es-MX";
+julissa.continuous = true;
+
+julissa.onresult = function(event) {
+    const comando = event.results[event.results.length - 1][0].transcript.toLowerCase();
+
+    if (comando.includes("julisa ponme música")) {
+        alert("Reproduciendo música...");
+    }
+
+    if (comando.includes("julisa recetas")) {
+        mostrarSeccion("recetas");
+    }
+
+    if (comando.includes("julisa trámites")) {
+        mostrarSeccion("tramites");
+    }
+
+    if (comando.includes("julisa abre tiendas")) {
+        abrirTiendas();
+    }
+};
+
+function activarJulisa() {
+    julissa.start();
+    alert("Julisa está escuchando…");
+}
