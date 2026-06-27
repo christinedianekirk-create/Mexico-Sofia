@@ -71,3 +71,27 @@ body {
     background: #eef9f0;
     border-radius: 8px;
 }
+#finanzas {
+    padding: 20px;
+}
+
+.finanzas-menu button {
+    margin: 5px;
+    padding: 10px 15px;
+    background: #c2185b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.finanzas-menu button:hover {
+    background: #8c1244;
+}
+
+#contenido-finanzas {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fde4ec;
+    border-radius: 8px;
+}
