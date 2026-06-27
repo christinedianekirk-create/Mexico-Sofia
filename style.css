@@ -95,3 +95,27 @@ body {
     background: #fde4ec;
     border-radius: 8px;
 }
+#salud {
+    padding: 20px;
+}
+
+.salud-menu button {
+    margin: 5px;
+    padding: 10px 15px;
+    background: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.salud-menu button:hover {
+    background: #b52b27;
+}
+
+#contenido-salud {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fdecea;
+    border-radius: 8px;
+}
