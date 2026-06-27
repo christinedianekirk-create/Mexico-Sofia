@@ -774,3 +774,59 @@ function mostrarEconomia(seccion) {
 
     document.getElementById("contenido-economia").innerHTML = contenido[seccion];
 }
+function mostrarUni(seccion) {
+    const contenido = {
+        habilidades: `
+            <h3>Habilidades Importantes</h3>
+            <ul>
+                <li>Comunicación efectiva</li>
+                <li>Organización personal</li>
+                <li>Resolución de problemas</li>
+                <li>Trabajo en equipo</li>
+                <li>Aprender más rápido</li>
+            </ul>
+        `,
+        vida: `
+            <h3>Vida Diaria</h3>
+            <ul>
+                <li>Cómo administrar el tiempo</li>
+                <li>Cómo mantener la casa organizada</li>
+                <li>Cómo cocinar más rápido</li>
+                <li>Cómo cuidar la salud</li>
+                <li>Cómo evitar estrés diario</li>
+            </ul>
+        `,
+        trabajo: `
+            <h3>Trabajo y Profesión</h3>
+            <ul>
+                <li>Cómo mejorar en tu trabajo</li>
+                <li>Cómo hablar con jefes</li>
+                <li>Cómo pedir aumento</li>
+                <li>Cómo buscar mejores oportunidades</li>
+                <li>Cómo prepararte para entrevistas</li>
+            </ul>
+        `,
+        emocional: `
+            <h3>Crecimiento Emocional</h3>
+            <ul>
+                <li>Cómo controlar emociones</li>
+                <li>Cómo mejorar autoestima</li>
+                <li>Cómo manejar ansiedad</li>
+                <li>Cómo tener relaciones sanas</li>
+                <li>Cómo mantener motivación</li>
+            </ul>
+        `,
+        futuro: `
+            <h3>Plan para el Futuro</h3>
+            <ul>
+                <li>Metas a corto plazo</li>
+                <li>Metas a largo plazo</li>
+                <li>Cómo planear 1 año</li>
+                <li>Cómo planear 5 años</li>
+                <li>Cómo construir un mejor futuro familiar</li>
+            </ul>
+        `
+    };
+
+    document.getElementById("contenido-uni").innerHTML = contenido[seccion];
+}
