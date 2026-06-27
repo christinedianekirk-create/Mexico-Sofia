@@ -311,3 +311,21 @@ body {
     background: #ffebee;
     border-radius: 8px;
 }
+#busqueda {
+    padding: 20px;
+}
+
+#buscador {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #4caf50;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#resultados-busqueda {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e8f5e9;
+    border-radius: 8px;
+}
