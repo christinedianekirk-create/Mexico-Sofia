@@ -450,3 +450,59 @@ function mostrarRecetas(seccion) {
 
     document.getElementById("contenido-recetas").innerHTML = contenido[seccion];
 }
+function mostrarPsico(seccion) {
+    const contenido = {
+        emociones: `
+            <h3>Emociones</h3>
+            <ul>
+                <li>Cómo identificar lo que sientes</li>
+                <li>Cómo expresar emociones sin pelear</li>
+                <li>Respiración para calmarte</li>
+                <li>Cómo manejar enojo</li>
+                <li>Cómo manejar tristeza</li>
+            </ul>
+        `,
+        autoestima: `
+            <h3>Autoestima</h3>
+            <ul>
+                <li>Cómo mejorar tu confianza</li>
+                <li>Hábitos que dañan la autoestima</li>
+                <li>Cómo hablarte bonito</li>
+                <li>Cómo dejar de compararte</li>
+                <li>Ejercicios diarios de amor propio</li>
+            </ul>
+        `,
+        ansiedad: `
+            <h3>Ansiedad</h3>
+            <ul>
+                <li>Qué es la ansiedad</li>
+                <li>Señales de alerta</li>
+                <li>Técnicas para calmar la mente</li>
+                <li>Ejercicios de respiración</li>
+                <li>Cómo ayudar a un familiar</li>
+            </ul>
+        `,
+        familia: `
+            <h3>Familia</h3>
+            <ul>
+                <li>Cómo mejorar la comunicación</li>
+                <li>Cómo resolver conflictos</li>
+                <li>Cómo escuchar sin juzgar</li>
+                <li>Cómo unir a la familia</li>
+                <li>Cómo poner límites sanos</li>
+            </ul>
+        `,
+        motivacion: `
+            <h3>Motivación</h3>
+            <ul>
+                <li>Frases motivadoras</li>
+                <li>Cómo levantarte en días difíciles</li>
+                <li>Cómo crear hábitos nuevos</li>
+                <li>Cómo mantenerte constante</li>
+                <li>Cómo no rendirte</li>
+            </ul>
+        `
+    };
+
+    document.getElementById("contenido-psico").innerHTML = contenido[seccion];
+}
