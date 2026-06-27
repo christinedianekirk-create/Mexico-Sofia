@@ -167,3 +167,27 @@ body {
     background: #f3e5f5;
     border-radius: 8px;
 }
+#tramites {
+    padding: 20px;
+}
+
+.tramites-menu button {
+    margin: 5px;
+    padding: 10px 15px;
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.tramites-menu button:hover {
+    background: #0d47a1;
+}
+
+#contenido-tramites {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e3f2fd;
+    border-radius: 8px;
+}
