@@ -718,3 +718,59 @@ function buscarContenido() {
         <ul>${filtrados.map(item => `<li>${item}</li>`).join("")}</ul>
     `;
 }
+function mostrarEconomia(seccion) {
+    const contenido = {
+        ideas: `
+            <h3>Ideas de Negocio</h3>
+            <ul>
+                <li>Venta de comida</li>
+                <li>Venta de gelatinas y bolis</li>
+                <li>Costura y arreglos</li>
+                <li>Manualidades para vender</li>
+                <li>Servicios de limpieza</li>
+            </ul>
+        `,
+        ventas: `
+            <h3>Ventas</h3>
+            <ul>
+                <li>Cómo vender sin pena</li>
+                <li>Cómo hablar con clientes</li>
+                <li>Cómo calcular precios</li>
+                <li>Cómo entregar productos bonitos</li>
+                <li>Cómo conseguir más clientes</li>
+            </ul>
+        `,
+        ahorro: `
+            <h3>Ahorro Inteligente</h3>
+            <ul>
+                <li>Cómo ahorrar con ingresos bajos</li>
+                <li>Reto de ahorro semanal</li>
+                <li>Cómo evitar gastos hormiga</li>
+                <li>Cómo hacer un presupuesto simple</li>
+                <li>Fondo de emergencia familiar</li>
+            </ul>
+        `,
+        hogar: `
+            <h3>Ingresos desde Casa</h3>
+            <ul>
+                <li>Venta de comida casera</li>
+                <li>Costura y arreglos</li>
+                <li>Cuidado de niños</li>
+                <li>Decoración de fiestas</li>
+                <li>Repostería por encargo</li>
+            </ul>
+        `,
+        digital: `
+            <h3>Ingresos Digitales</h3>
+            <ul>
+                <li>Ventas por internet</li>
+                <li>Marketing básico</li>
+                <li>Atención al cliente</li>
+                <li>Redacción simple</li>
+                <li>Diseño básico</li>
+            </ul>
+        `
+    };
+
+    document.getElementById("contenido-economia").innerHTML = contenido[seccion];
+}
