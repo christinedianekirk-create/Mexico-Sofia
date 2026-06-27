@@ -239,3 +239,27 @@ body {
     background: #f3e5f5;
     border-radius: 8px;
 }
+#profesiones {
+    padding: 20px;
+}
+
+.profesiones-menu button {
+    margin: 5px;
+    padding: 10px 15px;
+    background: #00897b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.profesiones-menu button:hover {
+    background: #00695c;
+}
+
+#contenido-profesiones {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e0f2f1;
+    border-radius: 8px;
+}
