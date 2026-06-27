@@ -263,3 +263,27 @@ body {
     background: #e0f2f1;
     border-radius: 8px;
 }
+#cursos {
+    padding: 20px;
+}
+
+.cursos-menu button {
+    margin: 5px;
+    padding: 10px 15px;
+    background: #3949ab;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cursos-menu button:hover {
+    background: #283593;
+}
+
+#contenido-cursos {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e8eaf6;
+    border-radius: 8px;
+}
