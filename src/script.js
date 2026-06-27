@@ -9,9 +9,85 @@ const screens = {
         <p>Selecciona una opción del menú para comenzar.</p>
     `,
 
-    "Tiendas Lovely Day": `
-        <h1>Tiendas Lovely Day</h1>
-        <p>Aquí estarán las 50 tiendas.</p>
+"Tiendas Lovely Day": `
+    <h1>Tiendas Lovely Day</h1>
+    <p>Selecciona una tienda para ver su información.</p>
+
+    <div class="tiendas-lista">
+
+        <h2>Tiendas Digitales</h2>
+        <ul>
+            <li>Lovely Day Digital Shop</li>
+            <li>Lovely Day PLR Store</li>
+            <li>Lovely Day MRR Store</li>
+            <li>Lovely Day E-books Store</li>
+            <li>Lovely Day Business Kits</li>
+            <li>Lovely Day Canva Templates</li>
+            <li>Lovely Day Social Media Packs</li>
+            <li>Lovely Day Printable Bundles</li>
+            <li>Lovely Day Digital Courses</li>
+            <li>Lovely Day Membership Club</li>
+        </ul>
+
+        <h2>Print-On-Demand</h2>
+        <ul>
+            <li>Lovely Day POD Shirts</li>
+            <li>Lovely Day POD Hoodies</li>
+            <li>Lovely Day POD Mugs</li>
+            <li>Lovely Day POD Tote Bags</li>
+            <li>Lovely Day POD Phone Cases</li>
+            <li>Lovely Day POD Stickers</li>
+            <li>Lovely Day POD Journals</li>
+            <li>Lovely Day POD Wall Art</li>
+            <li>Lovely Day POD Kids Collection</li>
+            <li>Lovely Day POD Couples Collection</li>
+        </ul>
+
+        <h2>Comida</h2>
+        <ul>
+            <li>Lovely Day Bolis & Helados</li>
+            <li>Lovely Day Paletas</li>
+            <li>Lovely Day Postres Caseros</li>
+            <li>Lovely Day Panadería Casera</li>
+            <li>Lovely Day Antojitos Mexicanos</li>
+            <li>Lovely Day Salsas y Aderezos</li>
+            <li>Lovely Day Comidas para Llevar</li>
+            <li>Lovely Day Snacks Saludables</li>
+            <li>Lovely Day Bebidas Naturales</li>
+            <li>Lovely Day Cocina Económica</li>
+        </ul>
+
+        <h2>Familia en México</h2>
+        <ul>
+            <li>Lovely Day Manualidades</li>
+            <li>Lovely Day Costura y Arreglos</li>
+            <li>Lovely Day Limpieza y Hogar</li>
+            <li>Lovely Day Jardinería</li>
+            <li>Lovely Day Reparaciones Básicas</li>
+            <li>Lovely Day Ropa de Bebé</li>
+            <li>Lovely Day Ropa de Mujer</li>
+            <li>Lovely Day Ropa de Hombre</li>
+            <li>Lovely Day Zapatería</li>
+            <li>Lovely Day Papelería Familiar</li>
+        </ul>
+
+        <h2>Servicios</h2>
+        <ul>
+            <li>Lovely Day Servicios de Oficina</li>
+            <li>Lovely Day Servicios de Limpieza</li>
+            <li>Lovely Day Servicios de Cocina</li>
+            <li>Lovely Day Servicios de Cuidado de Niños</li>
+            <li>Lovely Day Servicios de Cuidado de Adultos</li>
+            <li>Lovely Day Servicios de Mensajería</li>
+            <li>Lovely Day Servicios de Fotografía</li>
+            <li>Lovely Day Servicios de Video</li>
+            <li>Lovely Day Servicios de Diseño</li>
+            <li>Lovely Day Servicios de Reparación de Celulares</li>
+        </ul>
+
+    </div>
+`,
+
     `,
 
     "Cursos y Guías": `
