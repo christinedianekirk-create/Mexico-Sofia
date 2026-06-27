@@ -674,3 +674,47 @@ function mostrarLegal(seccion) {
 
     document.getElementById("contenido-legal").innerHTML = contenido[seccion];
 }
+function buscarContenido() {
+    const texto = document.getElementById("buscador").value.toLowerCase();
+    const resultados = document.getElementById("resultados-busqueda");
+
+    if (texto.length < 2) {
+        resultados.innerHTML = "";
+        return;
+    }
+
+    const baseDatos = [
+        "Gelatina mosaico",
+        "Nieve de limón",
+        "Bolis de rompope",
+        "Agua de horchata",
+        "Cómo sacar CURP",
+        "Cómo sacar INE",
+        "Cómo imprimir acta",
+        "Cómo usar máquina de coser",
+        "Cómo hacer bastilla",
+        "Cómo cocinar arroz",
+        "Cómo vender sin pena",
+        "Cómo mejorar autoestima",
+        "Cómo manejar ansiedad",
+        "Cómo ayudar a un niño enfermo",
+        "Cómo ahorrar dinero",
+        "Método bola de nieve",
+        "Inglés básico",
+        "Frases comunes en inglés",
+        "Computación básica",
+        "Cómo usar WhatsApp Web"
+    ];
+
+    const filtrados = baseDatos.filter(item => item.toLowerCase().includes(texto));
+
+    if (filtrados.length === 0) {
+        resultados.innerHTML = "<p>No se encontraron resultados.</p>";
+        return;
+    }
+
+    resultados.innerHTML = `
+        <h3>Resultados:</h3>
+        <ul>${filtrados.map(item => `<li>${item}</li>`).join("")}</ul>
+    `;
+}
