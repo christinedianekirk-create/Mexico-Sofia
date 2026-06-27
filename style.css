@@ -329,3 +329,27 @@ body {
     background: #e8f5e9;
     border-radius: 8px;
 }
+#economia {
+    padding: 20px;
+}
+
+.economia-menu button {
+    margin: 5px;
+    padding: 10px 15px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.economia-menu button:hover {
+    background: #1b5e20;
+}
+
+#contenido-economia {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e8f5e9;
+    border-radius: 8px;
+}
