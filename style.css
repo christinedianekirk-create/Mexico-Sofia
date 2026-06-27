@@ -353,3 +353,27 @@ body {
     background: #e8f5e9;
     border-radius: 8px;
 }
+#universidad {
+    padding: 20px;
+}
+
+.uni-menu button {
+    margin: 5px;
+    padding: 10px 15px;
+    background: #5e35b1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.uni-menu button:hover {
+    background: #4527a0;
+}
+
+#contenido-uni {
+    margin-top: 20px;
+    padding: 15px;
+    background: #ede7f6;
+    border-radius: 8px;
+}
