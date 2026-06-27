@@ -287,3 +287,27 @@ body {
     background: #e8eaf6;
     border-radius: 8px;
 }
+#legal {
+    padding: 20px;
+}
+
+.legal-menu button {
+    margin: 5px;
+    padding: 10px 15px;
+    background: #b71c1c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.legal-menu button:hover {
+    background: #7f0000;
+}
+
+#contenido-legal {
+    margin-top: 20px;
+    padding: 15px;
+    background: #ffebee;
+    border-radius: 8px;
+}
