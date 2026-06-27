@@ -119,3 +119,27 @@ body {
     background: #fdecea;
     border-radius: 8px;
 }
+#manualidades {
+    padding: 20px;
+}
+
+.manualidades-menu button {
+    margin: 5px;
+    padding: 10px 15px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.manualidades-menu button:hover {
+    background: #e68900;
+}
+
+#contenido-manualidades {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff3e0;
+    border-radius: 8px;
+}
