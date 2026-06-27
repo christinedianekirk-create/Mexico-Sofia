@@ -191,3 +191,27 @@ body {
     background: #e3f2fd;
     border-radius: 8px;
 }
+#recetas {
+    padding: 20px;
+}
+
+.recetas-menu button {
+    margin: 5px;
+    padding: 10px 15px;
+    background: #e65100;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.recetas-menu button:hover {
+    background: #bf4a00;
+}
+
+#contenido-recetas {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff8e1;
+    border-radius: 8px;
+}
