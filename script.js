@@ -850,3 +850,41 @@ function mostrarUni(seccion) {
         }
     });
 })();
+// --- SISTEMA DE CANDADO GLOBAL ---
+
+function solicitarAcceso(zona) {
+    const clave = prompt("Ingresa la contraseña para acceder a: " + zona);
+
+    if (clave === "SOFIA2026") {
+        alert("Acceso concedido a " + zona);
+        return true;
+    } else {
+        alert("Acceso denegado");
+        return false;
+    }
+}
+
+// --- BLOQUEAR SECCIONES ---
+function abrirTiendas() {
+    if (solicitarAcceso("Tiendas")) {
+        mostrarSeccion("tiendas");
+    }
+}
+
+function abrirCursosCarreras() {
+    if (solicitarAcceso("Cursos de Carreras")) {
+        mostrarSeccion("cursos-carreras");
+    }
+}
+
+function abrirSoftwareEspecial() {
+    if (solicitarAcceso("Software de $1000/semana")) {
+        mostrarSeccion("software-premium");
+    }
+}
+
+function abrirSoftwares12() {
+    if (solicitarAcceso("12 Softwares")) {
+        mostrarSeccion("softwares12");
+    }
+}
