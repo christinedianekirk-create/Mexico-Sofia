@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — SOFÍA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input {
+            width: 90%;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            text-align: center;
+            font-size: 20px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 95%;
+        }
+    </style>
+</head>
+<body>
 
+<div class="box">
+    <h2>Entrar a SOFÍA</h2>
+    <p>Escribe tu PIN</p>
+
+    <input id="pin" type="password" maxlength="4" placeholder="••••">
+
+    <button onclick="login()">Entrar</button>
+</div>
+
+<script>
+function login() {
+    const pin = document.getElementById("pin").value.trim();
+    const savedPin = localStorage.getItem("userPIN");
+
+    if (pin === savedPin) {
+        window.location.href = "panel-admin.html";
+    } else {
+        alert("PIN incorrecto.");
+    }
+}
+</script>
+
+</body>
+</html>
