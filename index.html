@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFIA App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <!-- ============================
+         LOGIN SCREEN
+    ============================ -->
+    <div id="login-screen">
+        <div class="login-card">
+            <div class="login-title">SOFIA</div>
+            <div class="login-subtitle">Acceso seguro</div>
+
+            <div class="login-field">
+                <label class="login-label">Usuario</label>
+                <input id="user" class="login-input" type="text" placeholder="Ingresa tu usuario">
+            </div>
+
+            <div class="login-field">
+                <label class="login-label">Contraseña</label>
+                <input id="pass" class="login-input" type="password" placeholder="Ingresa tu contraseña">
+            </div>
+
+            <button class="login-button" onclick="login()">Entrar</button>
+        </div>
+    </div>
+
+    <!-- ============================
+         APP PRINCIPAL
+    ============================ -->
+    <div id="app">
+
+        <div class="app-header">
+            <div class="app-title">SOFIA</div>
+            <div class="app-subtitle">Tu asistente familiar</div>
+        </div>
+
+        <!-- GRID DE MÓDULOS -->
+        <div class="modules-grid">
+
+            <div class="module-card" onclick="openModule('mod-tiendas')">
+                <div class="module-title">Tiendas</div>
+                <div class="module-desc">50 tiendas completas</div>
+            </div>
+
+            <div class="module-card" onclick="openModule('mod-software')">
+                <div class="module-title">Software</div>
+                <div class="module-desc">10–14 sistemas profesionales</div>
+            </div>
+
+            <div class="module-card" onclick="openModule('mod-cursos')">
+                <div class="module-title">Cursos</div>
+                <div class="module-desc">Profesionales y completos</div>
+            </div>
+
+            <div class="module-card" onclick="openModule('mod-salud')">
+                <div class="module-title">Salud</div>
+                <div class="module-desc">Diabetes, alimentos, guías</div>
+            </div>
+
+            <div class="module-card" onclick="openModule('mod-videos')">
+                <div class="module-title">Videos</div>
+                <div class="module-desc">TikTok y contenido útil</div>
+            </div>
+
+        </div>
+
+        <!-- ============================
+             MÓDULOS INTERNOS
+        ============================ -->
+
+        <!-- TIENDAS -->
+        <div id="mod-tiendas" class="module">
+            <div class="module-header">
+                <div class="module-name">Tiendas</div>
+                <div class="module-close" onclick="closeModule('mod-tiendas')">Cerrar</div>
+            </div>
+
+            <p class="text-small">Aquí irán las 50 tiendas completas.</p>
+        </div>
+
+        <!-- SOFTWARE -->
+        <div id="mod-software" class="module">
+            <div class="module-header">
+                <div class="module-name">Software</div>
+                <div class="module-close" onclick="closeModule('mod-software')">Cerrar</div>
+            </div>
+
+            <p class="text-small">Aquí irán los 10–14 softwares profesionales.</p>
+        </div>
+
+        <!-- CURSOS -->
+        <div id="mod-cursos" class="module">
+            <div class="module-header">
+                <div class="module-name">Cursos</div>
+                <div class="module-close" onclick="closeModule('mod-cursos')">Cerrar</div>
+            </div>
+
+            <p class="text-small">Cursos profesionales completos con certificado.</p>
+        </div>
+
+        <!-- SALUD -->
+        <div id="mod-salud" class="module">
+            <div class="module-header">
+                <div class="module-name">Salud</div>
+                <div class="module-close" onclick="closeModule('mod-salud')">Cerrar</div>
+            </div>
+
+            <p class="text-small">Alimentos para diabetes, guías y más.</p>
+        </div>
+
+        <!-- VIDEOS -->
+        <div id="mod-videos" class="module">
+            <div class="module-header">
+                <div class="module-name">Videos</div>
+                <div class="module-close" onclick="closeModule('mod-videos')">Cerrar</div>
+            </div>
+
+            <p class="text-small">Videos de TikTok y contenido útil.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
