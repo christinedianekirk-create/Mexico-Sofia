@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFÍA — Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2a004f, #5a00b8, #8a2be2);
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        .box {
+            background: rgba(0,0,0,0.35);
+            padding: 25px;
+            border-radius: 15px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 25px rgba(138,43,226,0.6);
+            backdrop-filter: blur(6px);
+        }
+        h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #e3baff;
+            text-shadow: 0 0 10px #b46cff;
+        }
+        p {
+            font-size: 18px;
+            color: #f3dfff;
+        }
+        .menu {
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        .item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(180,108,255,0.4);
+            transition: 0.2s;
+            font-weight: bold;
+        }
+        .item:hover {
+            background: rgba(255,255,255,0.2);
+            box-shadow: 0 0 20px rgba(227,186,255,0.8);
+        }
+        button {
+            margin-top: 25px;
+            padding: 14px 25px;
+            background: #b46cff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            width: 90%;
+            box-shadow: 0 0 15px #d28cff;
+        }
+        button:hover {
+            background: #d28cff;
+            box-shadow: 0 0 20px #e3baff;
+        }
+    </style>
+</head>
+<body>
 
+<div class="box">
+    <h2>Bienvenido</h2>
+    <p id="userName"></p>
+
+    <div class="menu">
+        <div class="item" onclick="go('modules/cursos/index.html')">Cursos</div>
+        <div class="item" onclick="go('modules/salud/index.html')">Salud</div>
+        <div class="item" onclick="go('modules/software/index.html')">Software</div>
+        <div class="item" onclick="go('modules/tiendas/index.html')">Tiendas</div>
+        <div class="item" onclick="go('modules/videos/index.html')">Videos</div>
+    </div>
+
+    <button onclick="logout()">Cerrar sesión</button>
+</div>
+
+<script>
+const name = localStorage.getItem("approvedName");
+document.getElementById("userName").innerText = 
+    name ? name : "Usuario";
+
+function go(path) {
+    window.location.href = path;
+}
+
+function logout() {
+    window.location.href = "logout.html";
+}
+</script>
+
+</body>
+</html>
