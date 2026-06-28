@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administradora — SOFÍA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .danger {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
 
+<h2>Panel de Administradora</h2>
+
+<div class="box">
+    <h3>Usuario aprobado</h3>
+    <p id="userName"></p>
+    <button onclick="logout()">Cerrar sesión</button>
+</div>
+
+<div class="box">
+    <h3>Opciones de seguridad</h3>
+    <button class="danger" onclick="resetPin()">Reiniciar PIN</button>
+    <button class="danger" onclick="blockUser()">Bloquear usuario</button>
+</div>
+
+<script>
+const name = localStorage.getItem("approvedName");
+document.getElementById("userName").innerText = 
+    name ? name : "No hay usuario aprobado.";
+
+function logout() {
+    alert("Sesión cerrada.");
+    window.location.href = "login.html";
+}
+
+function resetPin() {
+    localStorage.removeItem("userPIN");
+    alert("PIN reiniciado. El usuario deberá crear uno nuevo.");
+}
+
+function blockUser() {
+    localStorage.setItem("blocked", "true");
+    alert("Usuario bloqueado.");
+}
+</script>
+
+</body>
+</html>
