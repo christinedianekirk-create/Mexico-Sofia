@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFÍA — Perfil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2a004f, #5a00b8, #8a2be2);
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        .box {
+            background: rgba(0,0,0,0.35);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 450px;
+            margin: auto;
+            box-shadow: 0 0 25px rgba(138,43,226,0.6);
+            backdrop-filter: blur(6px);
+        }
+        h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #e3baff;
+            text-shadow: 0 0 10px #b46cff;
+        }
+        p {
+            font-size: 18px;
+            color: #f3dfff;
+            margin: 8px 0;
+        }
+        .label {
+            font-weight: bold;
+            color: #e3baff;
+        }
+        button {
+            margin-top: 25px;
+            padding: 14px 25px;
+            background: #b46cff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            width: 90%;
+            box-shadow: 0 0 15px #d28cff;
+        }
+        button:hover {
+            background: #d28cff;
+            box-shadow: 0 0 20px #e3baff;
+        }
+    </style>
+</head>
+<body>
 
+<div class="box">
+    <h2>Mi Perfil</h2>
+
+    <p><span class="label">Nombre:</span> <span id="name"></span></p>
+    <p><span class="label">Estado:</span> Activo</p>
+    <p><span class="label">PIN:</span> ••••</p>
+    <p><span class="label">Último acceso:</span> <span id="last"></span></p>
+
+    <button onclick="back()">Volver al Dashboard</button>
+</div>
+
+<script>
+const name = localStorage.getItem("approvedName");
+document.getElementById("name").innerText = name ? name : "Usuario";
+
+const now = new Date().toLocaleString();
+localStorage.setItem("lastAccess", now);
+document.getElementById("last").innerText = now;
+
+function back() {
+    window.location.href = "dashboard.html";
+}
+</script>
+
+</body>
+</html>
