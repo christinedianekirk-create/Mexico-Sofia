@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro — SOFÍA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input {
+            width: 90%;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 95%;
+        }
+    </style>
+</head>
+<body>
 
+<div class="box">
+    <h2>Registro SOFÍA</h2>
+    <p>Escribe tu nombre para comenzar</p>
+
+    <input id="name" type="text" placeholder="Tu nombre">
+
+    <button onclick="sendName()">Continuar</button>
+</div>
+
+<script>
+function sendName() {
+    const name = document.getElementById("name").value.trim();
+
+    if (!name) {
+        alert("Por favor escribe tu nombre.");
+        return;
+    }
+
+    // Guardar temporalmente
+    localStorage.setItem("pendingName", name);
+
+    // Ir a la pantalla de aprobación
+    window.location.href = "approve.html";
+}
+</script>
+
+</body>
+</html>
