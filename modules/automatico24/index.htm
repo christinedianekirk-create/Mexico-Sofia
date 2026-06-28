@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFÍA – Software Automático 24 Horas (Elite)</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #0d1117, #1b2330);
+            margin: 0;
+            padding: 0;
+            color: #e6edf3;
+        }
+
+        header {
+            background: rgba(22, 27, 34, 0.7);
+            backdrop-filter: blur(12px);
+            color: #e6edf3;
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            border-bottom: 1px solid #30363d;
+            letter-spacing: 1px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.4);
+        }
+
+        .subtitle {
+            font-size: 15px;
+            margin-top: 10px;
+            color: #9ca3af;
+        }
+
+        .container {
+            padding: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .intro {
+            background: rgba(22, 27, 34, 0.6);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid #30363d;
+            box-shadow: 0 0 25px rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .intro p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .tool-card {
+            background: rgba(13, 17, 23, 0.6);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid #30363d;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 35px rgba(88, 166, 255, 0.5);
+        }
+
+        .tool-name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #58a6ff;
+            margin-bottom: 10px;
+        }
+
+        .tool-tagline {
+            font-size: 15px;
+            color: #9ca3af;
+            margin-bottom: 15px;
+        }
+
+        .tool-card p {
+            font-size: 15px;
+            margin: 8px 0;
+        }
+
+        .btn-row {
+            margin-top: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #58a6ff;
+            color: #0d1117;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 15px;
+            margin-right: 10px;
+            margin-top: 8px;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn.secondary {
+            background: #30363d;
+            color: #e6edf3;
+            box-shadow: none;
+        }
+
+        .btn:hover {
+            background: #1f6feb;
+            box-shadow: 0 0 20px rgba(31, 111, 235, 0.7);
+        }
+
+        .section-title {
+            margin-top: 40px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #58a6ff;
+            text-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+        }
+
+        .money-block {
+            background: rgba(22, 27, 34, 0.6);
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 20px;
+            border: 1px solid #30363d;
+            box-shadow: 0 0 25px rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .money-block p {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        .highlight {
+            color: #3fb950;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(63, 185, 80, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    SOFÍA – Software Automático 24 Horas (Elite)
+    <div class="subtitle">
+        IA que trabaja, publica y genera ingresos 24/7
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="intro">
+        <p><strong>Software Automático 24 Horas:</strong> Sistema que trabaja solo, publica solo y genera ingresos sin que estés conectada.</p>
+        <p>Ideal para vender productos, servicios, contenido, cursos y mini‑apps.</p>
+        <p>La IA se encarga de automatizar tareas, mensajes, ventas y clientes.</p>
+    </div>
+
+    <div class="tools-grid">
+
+        <div class="tool-card">
+            <div class="tool-name">Publicación Automática</div>
+            <div class="tool-tagline">Contenido · Fotos · Videos · Productos</div>
+            <p>Publica automáticamente en tus plataformas cada día.</p>
+            <p>Ideal para ventas, artesanías, comida, cursos y contenido.</p>
+            <div class="btn-row">
+                <a class="btn" href="#">Configurar auto‑publicación</a>
+            </div>
+        </div>
+
+        <div class="tool-card">
+            <div class="tool-name">Mensajes Automáticos</div>
+            <div class="tool-tagline">Clientes · Preguntas · Respuestas</div>
+            <p>La IA responde mensajes de clientes automáticamente.</p>
+            <p>Genera ventas sin que estés conectada.</p>
+            <div class="btn-row">
+                <a class="btn" href="#">Activar auto‑mensajes</a>
+            </div>
+        </div>
+
+        <div class="tool-card">
+            <div class="tool-name">Ventas Automáticas</div>
+            <div class="tool-tagline">Tickets · Pagos · Reportes</div>
+            <p>Registra ventas y pagos automáticamente 24/7.</p>
+            <p>Ideal para negocios familiares y digitales.</p>
+            <div class="btn-row">
+                <a class="btn" href="#">Ver ventas automáticas</a>
+            </div>
+        </div>
+
+        <div class="tool-card">
+            <div class="tool-name">Clientes Automáticos</div>
+            <div class="tool-tagline">IA · Recomendaciones · Seguimiento</div>
+            <p>La IA consigue clientes nuevos cada día.</p>
+            <p>Genera ingresos mientras duermes.</p>
+            <div class="btn-row">
+                <a class="btn" href="#">Activar clientes 24/7</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section-title">IA que trabaja por ti</div>
+
+    <div class="money-block">
+        <p>La IA te ayuda a:</p>
+        <p>• Publicar contenido automáticamente.</p>
+        <p>• Responder clientes sin que estés conectada.</p>
+        <p>• Generar ventas y pagos automáticos.</p>
+        <p>• Conseguir clientes nuevos <span class="highlight">24 horas al día</span>.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
