@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprobación — SOFÍA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 95%;
+        }
+        .reject {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
 
+<div class="box">
+    <h2>Solicitud de acceso</h2>
+    <p id="nameBox"></p>
+
+    <button onclick="approve()">Aprobar</button>
+    <button class="reject" onclick="reject()">Rechazar</button>
+</div>
+
+<script>
+const name = localStorage.getItem("pendingName");
+document.getElementById("nameBox").innerText = 
+    "Nombre: " + (name ? name : "No encontrado");
+
+function approve() {
+    localStorage.setItem("approvedName", name);
+    window.location.href = "create-pin.html";
+}
+
+function reject() {
+    alert("Solicitud rechazada.");
+    localStorage.removeItem("pendingName");
+    window.location.href = "register.html";
+}
+</script>
+
+</body>
+</html>
