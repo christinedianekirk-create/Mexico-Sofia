@@ -1,4 +1,4 @@
-# Proyecto MÉXICO–SOFÍA  un
+fgere y casi todo del redme# Proyecto MÉXICO–SOFÍA  un
 Aplicación familiar para apoyar a 50 familiares en México con herramientas de:  
 salud, legal, finanzas, educación, recetas, motivación, trámites, negocios y cursos.
 
