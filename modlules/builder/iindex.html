@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>KIVO Builder – SOFÍA</title>
+  <link rel="stylesheet" href="builder.css">
+</head>
+<body>
+  <header>
+    <h1>KIVO Builder</h1>
+    <p>Crea módulos escribiendo texto. La IA hace el resto.</p>
+  </header>
+
+  <main>
+    <section id="input">
+      <h2>Describe tu módulo</h2>
+      <textarea id="builderText" placeholder="Ejemplo: Quiero un módulo de recetas de helados para mis tías..."></textarea>
+      <button id="generateBtn">Generar módulo</button>
+    </section>
+
+    <section id="preview">
+      <h2>Vista previa</h2>
+      <div id="previewContent"></div>
+    </section>
+  </main>
+
+  <script src="builder.js"></script>
+</body>
+</html>
