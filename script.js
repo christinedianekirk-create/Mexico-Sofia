@@ -650,3 +650,11 @@ suggestBtn.classList.add("ide-btn");
 document.querySelector(".ide-actions").appendChild(suggestBtn);
 
 suggestBtn.addEventListener("click", showSmartSuggestions);
+function aiChatSuggestions(message) {
+  if (message.includes("mejora") || message.includes("optimiza")) {
+    const code = document.getElementById("code-area").value;
+    return aiSmartSuggestions(code);
+  }
+
+  return "🤖 Puedo darte sugerencias inteligentes si escribes: 'mejora mi código'.";
+}
