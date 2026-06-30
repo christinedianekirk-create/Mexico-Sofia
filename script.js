@@ -644,3 +644,9 @@ function showSmartSuggestions() {
   const consoleOutput = document.getElementById("console-output");
   consoleOutput.innerText = aiSmartSuggestions(code);
 }
+const suggestBtn = document.createElement("button");
+suggestBtn.innerText = "Sugerencias";
+suggestBtn.classList.add("ide-btn");
+document.querySelector(".ide-actions").appendChild(suggestBtn);
+
+suggestBtn.addEventListener("click", showSmartSuggestions);
