@@ -195,3 +195,32 @@ function saveFile() {
 function toggleTheme() {
   document.body.classList.toggle("light-mode");
 }
+function aiAnalyzeCode(code) {
+  let analysis = "🤖 Análisis de IA:\n\n";
+
+  if (!code.trim()) {
+    return analysis + "⚠ No escribiste nada.";
+  }
+
+  if (code.includes("function") && !code.includes("}")) {
+    analysis += "⚠ Una función parece incompleta.\n";
+  }
+
+  if (!code.includes("console.log")) {
+    analysis += "ℹ Tip: Usa console.log() para ver resultados.\n";
+  }
+
+  if (code.includes("=") && !code.includes("let") && !code.includes("const") && !code.includes("var")) {
+    analysis += "⚠ Estás asignando valores sin declarar variables.\n";
+  }
+
+  if ((code.match(/"/g) || []).length % 2 !== 0) {
+    analysis += "⚠ Hay comillas sin cerrar.\n";
+  }
+
+  if (analysis === "🤖 Análisis de IA:\n\n") {
+    analysis += "✔ Tu código se ve bien.";
+  }
+
+  return analysis;
+}
