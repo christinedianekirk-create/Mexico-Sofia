@@ -914,3 +914,30 @@ function aiChatArchitecture(message) {
 
   return "🤖 Puedo generar arquitectura profesional si escribes: 'crea arquitectura'.";
 }
+document.addEventListener("keydown", (e) => {
+  const input = document.getElementById("ai-chat-input");
+  const messages = document.getElementById("ai-chat-messages");
+
+  if (!input) return;
+
+  if (e.key === "Enter") {
+    const userMsg = input.value.trim();
+    if (!userMsg) return;
+
+    const userBubble = document.createElement("div");
+    userBubble.style.margin = "6px 0";
+    userBubble.innerText = "🟡 Tú: " + userMsg;
+    messages.appendChild(userBubble);
+
+    // IA responde con arquitectura completa
+    const aiMsg = aiChatArchitecture(userMsg);
+
+    const aiBubble = document.createElement("div");
+    aiBubble.style.margin = "6px 0";
+    aiBubble.innerText = "🤖 IA: " + aiMsg;
+    messages.appendChild(aiBubble);
+
+    messages.scrollTop = messages.scrollHeight;
+    input.value = "";
+  }
+});
