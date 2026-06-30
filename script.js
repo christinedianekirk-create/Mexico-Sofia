@@ -821,3 +821,9 @@ function showRefactoredCode() {
   const consoleOutput = document.getElementById("console-output");
   consoleOutput.innerText = refactored;
 }
+const refactorBtn = document.createElement("button");
+refactorBtn.innerText = "Refactorizar";
+refactorBtn.classList.add("ide-btn");
+document.querySelector(".ide-actions").appendChild(refactorBtn);
+
+refactorBtn.addEventListener("click", showRefactoredCode);
