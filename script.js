@@ -658,3 +658,59 @@ function aiChatSuggestions(message) {
 
   return "🤖 Puedo darte sugerencias inteligentes si escribes: 'mejora mi código'.";
 }
+document.addEventListener("keydown", (e) => {
+  const input = document.getElementById("ai-chat-input");
+  const messages = document.getElementById("ai-chat-messages");
+
+  if (!input) return;
+
+  if (e.key === "Enter") {
+    const userMsg = input.value.trim();
+    if (!userMsg) return;
+
+    const userBubble = document.createElement("div");
+    userBubble.style.margin = "6px 0";
+    userBubble.innerText = "🟡 Tú: " + userMsg;
+    messages.appendChild(userBubble);
+
+    // IA responde con sugerencias inteligentes
+    const aiMsg = aiChatSuggestions(userMsg);
+
+    const aiBubble = document.createElement("div");
+    aiBubble.style.margin = "6px 0";
+    aiBubble.innerText = "🤖 IA: " + aiMsg;
+    messages.appendChild(aiBubble);
+
+    messages.scrollTop = messages.scrollHeight;
+    input.value = "";
+  }
+});
+// =======================================
+// IA — OPTIMIZACIÓN AUTOMÁTICA DE CÓDIGO
+// =======================================
+
+function aiOptimizeCode(code) {
+  let optimized = code;
+
+  // Eliminar espacios innecesarios
+  optimized = optimized.replace(/\s+/g, " ");
+
+  // Reemplazar funciones largas por funciones compactas
+  optimized = optimized.replace(/function\s+(\w+)\s*\((.*?)\)\s*\{/g,
+    "const $1 = ($2) => {");
+
+  // Simplificar console.log
+  optimized = optimized.replace(/console\.log\((.*?)\);/g,
+    "console.log($1)");
+
+  // Convertir var a let
+  optimized = optimized.replace(/var /g, "let ");
+
+  // Eliminar comentarios largos
+  optimized = optimized.replace(/\/\*[\s\S]*?\*\//g, "");
+
+  // Eliminar líneas vacías
+  optimized = optimized.replace(/^\s*[\r\n]/gm, "");
+
+  return optimized.trim();
+}
