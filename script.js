@@ -189,3 +189,6 @@ aiButton.addEventListener("click", () => {
   const analysis = aiAnalyzeCode(code);
   consoleOutput.innerText = analysis;
 });
+function saveFile() {
+  alert("✔ Archivo guardado (simulación).");
+}
