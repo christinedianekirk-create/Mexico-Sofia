@@ -862,3 +862,38 @@ document.addEventListener("keydown", (e) => {
     input.value = "";
   }
 });
+// =======================================
+// IA — ARQUITECTURA COMPLETA (MVC + CORE)
+// =======================================
+
+function aiGenerateArchitecture() {
+  return `
+📁 /src
+   📁 /models
+       - userModel.js
+       - dataModel.js
+
+   📁 /views
+       - mainView.js
+       - editorView.js
+
+   📁 /controllers
+       - appController.js
+       - editorController.js
+
+   📁 /utils
+       - validator.js
+       - formatter.js
+
+   📁 /core
+       - bootstrap.js
+       - router.js
+
+📁 /public
+   - index.html
+   - style.css
+   - script.js
+
+✨ Arquitectura generada automáticamente por IA.
+`;
+}
