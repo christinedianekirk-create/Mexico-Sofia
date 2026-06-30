@@ -713,4 +713,10 @@ function aiOptimizeCode(code) {
   optimized = optimized.replace(/^\s*[\r\n]/gm, "");
 
   return optimized.trim();
+function showOptimizedCode() {
+  const code = document.getElementById("code-area").value;
+  const optimized = aiOptimizeCode(code);
+  const consoleOutput = document.getElementById("console-output");
+  consoleOutput.innerText = optimized;
+}
 }
