@@ -726,3 +726,11 @@ optimizeBtn.classList.add("ide-btn");
 document.querySelector(".ide-actions").appendChild(optimizeBtn);
 
 optimizeBtn.addEventListener("click", showOptimizedCode);
+function aiChatOptimize(message) {
+  if (message.includes("optimiza") || message.includes("rápido")) {
+    const code = document.getElementById("code-area").value;
+    return aiOptimizeCode(code);
+  }
+
+  return "🤖 Puedo optimizar tu código si escribes: 'optimiza mi código'.";
+}
