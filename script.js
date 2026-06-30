@@ -229,3 +229,14 @@ function showAIAnalysis() {
   const consoleOutput = document.getElementById("console-output");
   consoleOutput.innerText = aiAnalyzeCode(code);
 }
+function runCode() {
+  const code = document.getElementById("code-area").value;
+  const consoleOutput = document.getElementById("console-output");
+
+  try {
+    const result = eval(code);
+    consoleOutput.innerText = result !== undefined ? result : "✔ Código ejecutado.";
+  } catch (error) {
+    consoleOutput.innerText = "❌ Error: " + error.message;
+  }
+}
