@@ -50,7 +50,7 @@
 
 <body>
 
-  <!-- TU SISTEMA ORIGINAL (MÓDULOS) -->
+  <!-- TU SISTEMA ORIGINAL (MÓDULO VIDEOS) -->
   <div id="mod-videos" class="module">
     <div class="module-header">
       <div class="module-name">Videos</div>
@@ -59,15 +59,45 @@
     <p class="text-small">Videos de TikTok y contenido útil.</p>
   </div>
 
-  <!-- COMPONENTE MODERNO (FRAMER + BENTO.ME) -->
+  <!-- COMPONENTE MODERNO -->
   <div class="modern-container">
     <h1>Bienvenido al Componente</h1>
     <p>Este es un componente listo para usar, con bordes redondeados y tema oscuro.</p>
     <a href="#" class="modern-button">Empezar</a>
   </div>
 
-  <!-- SCRIPTS ORIGINALES -->
-  <script src="script.js"></script>
+  <!-- IDE TIPO CURSOR / REPLIT -->
+  <div class="ide-layout">
+    <div class="ide-sidebar">
+      <div class="ide-sidebar-header">Archivos</div>
+      <ul class="ide-file-list">
+        <li>index.html</li>
+        <li>style.css</li>
+        <li>script.js</li>
+      </ul>
+    </div>
 
-</body>
-</html>
+    <div class="ide-editor">
+      <div class="ide-editor-header">
+        <span>Editor</span>
+        <div class="ide-actions">
+          <button id="run-btn" class="ide-btn ide-btn-primary">Run</button>
+          <button class="ide-btn">Guardar</button>
+          <button class="ide-btn">Tema</button>
+        </div>
+      </div>
+
+      <textarea id="code-area" class="ide-code-area">
+// Escribe código JavaScript aquí...
+// Ejemplo:
+// 2 + 2
+      </textarea>
+    </div>
+
+    <div class="ide-console">
+      <div class="ide-console-header">Consola</div>
+      <div id="console-output" class="ide-console-output">
+        Listo para ejecutar código...
+      </div>
+    </div>
+  </div>
