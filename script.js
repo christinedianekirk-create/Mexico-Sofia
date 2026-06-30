@@ -174,3 +174,18 @@ function aiAnalyzeCode(code) {
 
   return analysis;
 }
+// =======================================
+// BOTÓN IA — ANALIZAR CÓDIGO
+// =======================================
+
+const aiButton = document.createElement("button");
+aiButton.innerText = "IA";
+aiButton.classList.add("ide-btn");
+document.querySelector(".ide-actions").appendChild(aiButton);
+
+aiButton.addEventListener("click", () => {
+  const code = document.getElementById("code-area").value;
+  const consoleOutput = document.getElementById("console-output");
+  const analysis = aiAnalyzeCode(code);
+  consoleOutput.innerText = analysis;
+});
