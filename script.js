@@ -639,3 +639,8 @@ function aiSmartSuggestions(code) {
 
   return suggestions;
 }
+function showSmartSuggestions() {
+  const code = document.getElementById("code-area").value;
+  const consoleOutput = document.getElementById("console-output");
+  consoleOutput.innerText = aiSmartSuggestions(code);
+}
