@@ -1,1 +1,34 @@
-
+[
+    {
+        "id": 1,
+        "nombre": "Sticker Floral",
+        "precio": "$3.50",
+        "descripcion": "Sticker resistente al agua con diseño floral.",
+        "imagen": "https://i.imgur.com/8fKQyqD.png",
+        "categoria": "stickers"
+    },
+    {
+        "id": 2,
+        "nombre": "Sticker Cute",
+        "precio": "$3.00",
+        "descripcion": "Sticker adorable para decorar libretas y laptops.",
+        "imagen": "https://i.imgur.com/3vQm8mH.png",
+        "categoria": "stickers"
+    },
+    {
+        "id": 3,
+        "nombre": "Libreta Rosa",
+        "precio": "$8.00",
+        "descripcion": "Libreta de 80 hojas con diseño minimalista.",
+        "imagen": "https://i.imgur.com/7pQm8mH.png",
+        "categoria": "papeleria"
+    },
+    {
+        "id": 4,
+        "nombre": "Bolsa Cute",
+        "precio": "$12.00",
+        "descripcion": "Bolsa pequeña con diseño kawaii.",
+        "imagen": "https://i.imgur.com/5fKQyqD.png",
+        "categoria": "bolsas"
+    }
+]
