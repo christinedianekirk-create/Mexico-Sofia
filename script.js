@@ -572,3 +572,15 @@ function showGhostText(suggestion) {
 
   document.getElementById("ghost-text").innerText = suggestion;
 }
+document.getElementById("code-area").addEventListener("input", (e) => {
+  const text = e.target.value;
+  const lastWord = text.split(/\s+/).pop();
+
+  const suggestion = aiPredictCode(lastWord);
+
+  if (suggestion) {
+    showGhostText(suggestion);
+  } else {
+    showGhostText("");
+  }
+});
