@@ -901,3 +901,9 @@ function showArchitecture() {
   const consoleOutput = document.getElementById("console-output");
   consoleOutput.innerText = aiGenerateArchitecture();
 }
+const archBtn = document.createElement("button");
+archBtn.innerText = "Arquitectura";
+archBtn.classList.add("ide-btn");
+document.querySelector(".ide-actions").appendChild(archBtn);
+
+archBtn.addEventListener("click", showArchitecture);
