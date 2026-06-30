@@ -302,3 +302,14 @@ function accion() {
 }
 `;
 }
+function aiAutocomplete(partial) {
+  if (partial.includes("for")) {
+    return "for (let i = 0; i < 10; i++) {\n  console.log(i);\n}";
+  }
+
+  if (partial.includes("function")) {
+    return "function nuevaFuncion() {\n  console.log('Hola desde la IA');\n}";
+  }
+
+  return "// No encontré autocompletado para eso.";
+}
