@@ -907,3 +907,10 @@ archBtn.classList.add("ide-btn");
 document.querySelector(".ide-actions").appendChild(archBtn);
 
 archBtn.addEventListener("click", showArchitecture);
+function aiChatArchitecture(message) {
+  if (message.includes("arquitectura") || message.includes("estructura")) {
+    return aiGenerateArchitecture();
+  }
+
+  return "🤖 Puedo generar arquitectura profesional si escribes: 'crea arquitectura'.";
+}
