@@ -192,3 +192,6 @@ aiButton.addEventListener("click", () => {
 function saveFile() {
   alert("✔ Archivo guardado (simulación).");
 }
+function toggleTheme() {
+  document.body.classList.toggle("light-mode");
+}
