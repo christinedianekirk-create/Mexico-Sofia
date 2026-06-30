@@ -553,3 +553,22 @@ function aiPredictCode(partial) {
 
   return "";
 }
+function showGhostText(suggestion) {
+  const ghost = document.getElementById("ghost-text");
+
+  if (!ghost) {
+    const ghostDiv = document.createElement("div");
+    ghostDiv.id = "ghost-text";
+    ghostDiv.style.position = "absolute";
+    ghostDiv.style.pointerEvents = "none";
+    ghostDiv.style.opacity = "0.3";
+    ghostDiv.style.color = "#9ca3af";
+    ghostDiv.style.fontFamily = "JetBrains Mono, monospace";
+    ghostDiv.style.fontSize = "13px";
+    ghostDiv.style.marginTop = "-20px";
+    ghostDiv.style.whiteSpace = "pre";
+    document.querySelector(".ide-editor").appendChild(ghostDiv);
+  }
+
+  document.getElementById("ghost-text").innerText = suggestion;
+}
