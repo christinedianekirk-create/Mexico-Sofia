@@ -835,3 +835,30 @@ function aiChatRefactor(message) {
 
   return "🤖 Puedo refactorizar tu código si escribes: 'refactoriza mi código'.";
 }
+document.addEventListener("keydown", (e) => {
+  const input = document.getElementById("ai-chat-input");
+  const messages = document.getElementById("ai-chat-messages");
+
+  if (!input) return;
+
+  if (e.key === "Enter") {
+    const userMsg = input.value.trim();
+    if (!userMsg) return;
+
+    const userBubble = document.createElement("div");
+    userBubble.style.margin = "6px 0";
+    userBubble.innerText = "🟡 Tú: " + userMsg;
+    messages.appendChild(userBubble);
+
+    // IA responde con refactorización avanzada
+    const aiMsg = aiChatRefactor(userMsg);
+
+    const aiBubble = document.createElement("div");
+    aiBubble.style.margin = "6px 0";
+    aiBubble.innerText = "🤖 IA: " + aiMsg;
+    messages.appendChild(aiBubble);
+
+    messages.scrollTop = messages.scrollHeight;
+    input.value = "";
+  }
+});
