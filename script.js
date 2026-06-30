@@ -224,3 +224,8 @@ function aiAnalyzeCode(code) {
 
   return analysis;
 }
+function showAIAnalysis() {
+  const code = document.getElementById("code-area").value;
+  const consoleOutput = document.getElementById("console-output");
+  consoleOutput.innerText = aiAnalyzeCode(code);
+}
