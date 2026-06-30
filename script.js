@@ -295,3 +295,10 @@ function aiExplainCode(code) {
 
   return explanation;
 }
+function aiTextToCode(text) {
+  return `
+function accion() {
+  console.log("${text}");
+}
+`;
+}
