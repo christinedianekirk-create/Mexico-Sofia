@@ -897,3 +897,7 @@ function aiGenerateArchitecture() {
 ✨ Arquitectura generada automáticamente por IA.
 `;
 }
+function showArchitecture() {
+  const consoleOutput = document.getElementById("console-output");
+  consoleOutput.innerText = aiGenerateArchitecture();
+}
