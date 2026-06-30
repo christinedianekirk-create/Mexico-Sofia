@@ -443,3 +443,7 @@ document.addEventListener("keydown", (e) => {
     input.value = "";
   }
 });
+function aiInsertIntoEditor(code) {
+  const codeArea = document.getElementById("code-area");
+  codeArea.value += "\n\n" + code;
+}
