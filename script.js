@@ -384,3 +384,31 @@ chatBtn.addEventListener("click", () => {
     createAIChatPanel();
   }
 });
+// =======================================
+// IA QUE RESPONDE EN EL CHAT
+// =======================================
+
+function aiChatResponse(message) {
+  // Respuestas inteligentes
+  if (message.includes("explica")) {
+    return "📘 Puedo explicarte cualquier código. Solo pégalo aquí.";
+  }
+
+  if (message.includes("genera")) {
+    return `
+function ejemploGenerado() {
+  console.log("Código generado automáticamente por la IA.");
+}
+`;
+  }
+
+  if (message.includes("corrige")) {
+    return "🔧 Pega tu código y lo corrijo.";
+  }
+
+  if (message.includes("hola")) {
+    return "Hola mi Christine 💛 ¿qué quieres crear hoy?";
+  }
+
+  return "🤖 No entendí del todo, pero puedo ayudarte. ¿Quieres generar, corregir o explicar código?";
+}
