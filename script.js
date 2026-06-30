@@ -21,3 +21,32 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// ===============================
+// BOTÓN GUARDAR — SIMULACIÓN
+// ===============================
+
+const saveButtons = document.querySelectorAll(".ide-btn");
+
+saveButtons.forEach(btn => {
+  if (btn.innerText === "Guardar") {
+    btn.addEventListener("click", () => {
+      alert("✔ Archivo guardado (simulación).");
+    });
+  }
+});
+
+// ===============================
+// BOTÓN TEMA — OSCURO / CLARO
+// ===============================
+
+const themeBtn = document.querySelector(".ide-btn:nth-child(3)");
+
+themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+
+  if (document.body.classList.contains("light-mode")) {
+    themeBtn.innerText = "Tema oscuro";
+  } else {
+    themeBtn.innerText = "Tema claro";
+  }
+});
