@@ -313,3 +313,6 @@ function aiAutocomplete(partial) {
 
   return "// No encontré autocompletado para eso.";
 }
+function aiRespond(message) {
+  return "🤖 IA: " + message;
+}
