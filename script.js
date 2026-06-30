@@ -240,3 +240,27 @@ function runCode() {
     consoleOutput.innerText = "❌ Error: " + error.message;
   }
 }
+function connectIDEButtons() {
+  const runBtn = document.getElementById("run-btn");
+  const saveBtn = document.querySelector(".ide-btn:nth-child(2)");
+  const themeBtn = document.querySelector(".ide-btn:nth-child(3)");
+
+  // Botón RUN
+  runBtn.addEventListener("click", runCode);
+
+  // Botón Guardar
+  saveBtn.addEventListener("click", saveFile);
+
+  // Botón Tema
+  themeBtn.addEventListener("click", toggleTheme);
+
+  // Botón IA
+  const aiBtn = document.createElement("button");
+  aiBtn.innerText = "IA";
+  aiBtn.classList.add("ide-btn");
+  document.querySelector(".ide-actions").appendChild(aiBtn);
+
+  aiBtn.addEventListener("click", showAIAnalysis);
+}
+
+document.addEventListener("DOMContentLoaded", connectIDEButtons);
