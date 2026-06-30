@@ -451,3 +451,7 @@ function aiInsertIntoEditor(code) {
   const codeArea = document.getElementById("code-area");
   codeArea.value += "\n\n" + code;
 }
+function aiReplaceEditorCode(newCode) {
+  const codeArea = document.getElementById("code-area");
+  codeArea.value = newCode;
+}
