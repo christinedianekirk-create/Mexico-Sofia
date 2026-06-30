@@ -316,3 +316,16 @@ function aiAutocomplete(partial) {
 function aiRespond(message) {
   return "🤖 IA: " + message;
 }
+const generateBtn = document.createElement("button");
+generateBtn.innerText = "Generar";
+generateBtn.classList.add("ide-btn");
+document.querySelector(".ide-actions").appendChild(generateBtn);
+
+generateBtn.addEventListener("click", () => {
+  const codeArea = document.getElementById("code-area");
+  const consoleOutput = document.getElementById("console-output");
+
+  const generated = aiGenerateFunction("Código solicitado por Christine");
+  codeArea.value = generated;
+  consoleOutput.innerText = "✨ Código generado automáticamente.";
+});
