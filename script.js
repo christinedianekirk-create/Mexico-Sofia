@@ -329,3 +329,44 @@ generateBtn.addEventListener("click", () => {
   codeArea.value = generated;
   consoleOutput.innerText = "✨ Código generado automáticamente.";
 });
+// =======================================
+// CREAR PANEL DE CHAT DENTRO DEL IDE
+// =======================================
+
+function createAIChatPanel() {
+  const chatPanel = document.createElement("div");
+  chatPanel.id = "ai-chat-panel";
+  chatPanel.style.position = "fixed";
+  chatPanel.style.right = "20px";
+  chatPanel.style.bottom = "20px";
+  chatPanel.style.width = "300px";
+  chatPanel.style.height = "380px";
+  chatPanel.style.background = "#0b1120";
+  chatPanel.style.border = "1px solid #374151";
+  chatPanel.style.borderRadius = "12px";
+  chatPanel.style.boxShadow = "0 4px 12px rgba(0,0,0,0.3)";
+  chatPanel.style.display = "flex";
+  chatPanel.style.flexDirection = "column";
+  chatPanel.style.zIndex = "9999";
+  chatPanel.style.padding = "10px";
+  chatPanel.style.color = "#e5e7eb";
+  chatPanel.style.fontFamily = "Inter, sans-serif";
+
+  chatPanel.innerHTML = `
+    <div style="font-size:14px; margin-bottom:8px; font-weight:bold;">
+      🤖 Chat IA
+    </div>
+
+    <div id="ai-chat-messages"
+         style="flex:1; overflow-y:auto; padding:6px; font-size:13px;">
+    </div>
+
+    <input id="ai-chat-input"
+           placeholder="Escribe aquí..."
+           style="margin-top:8px; padding:8px; border-radius:8px;
+                  border:1px solid #374151; background:#1a1a1a;
+                  color:#e5e7eb; font-size:13px;">
+  `;
+
+  document.body.appendChild(chatPanel);
+}
