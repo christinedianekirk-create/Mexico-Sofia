@@ -528,3 +528,28 @@ document.addEventListener("keydown", (e) => {
     input.value = "";
   }
 });
+// =======================================
+// AUTOCOMPLETADO EN TIEMPO REAL
+// =======================================
+
+function aiPredictCode(partial) {
+  partial = partial.trim();
+
+  if (partial.endsWith("for")) {
+    return "for (let i = 0; i < 10; i++) {\n  console.log(i);\n}";
+  }
+
+  if (partial.endsWith("fun") || partial.includes("function")) {
+    return "function nuevaFuncion() {\n  console.log('Hola desde la IA');\n}";
+  }
+
+  if (partial.endsWith("if")) {
+    return "if (true) {\n  console.log('Condición verdadera');\n}";
+  }
+
+  if (partial.endsWith("con")) {
+    return "console.log('Mensaje desde IA');";
+  }
+
+  return "";
+}
