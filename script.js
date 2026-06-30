@@ -370,3 +370,17 @@ function createAIChatPanel() {
 
   document.body.appendChild(chatPanel);
 }
+// =======================================
+// BOTÓN PARA ABRIR EL CHAT DE IA
+// =======================================
+
+const chatBtn = document.createElement("button");
+chatBtn.innerText = "Chat";
+chatBtn.classList.add("ide-btn");
+document.querySelector(".ide-actions").appendChild(chatBtn);
+
+chatBtn.addEventListener("click", () => {
+  if (!document.getElementById("ai-chat-panel")) {
+    createAIChatPanel();
+  }
+});
