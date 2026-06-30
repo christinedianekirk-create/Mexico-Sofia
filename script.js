@@ -125,3 +125,52 @@ themeBtn.addEventListener("click", () => {
 function aiAnalyzeCode(code) {
   return "🤖 IA lista para activarse...";
 }
+// =======================================
+// IA REAL — ANALIZA EL CÓDIGO DEL EDITOR
+// =======================================
+
+function aiAnalyzeCode(code) {
+  let analysis = "🤖 Análisis de IA:\n\n";
+
+  // Detectar si el código está vacío
+  if (!code.trim()) {
+    return analysis + "⚠ No escribiste nada. Intenta poner código.";
+  }
+
+  // Detectar funciones sin cerrar
+  if (code.includes("function") && !code.includes("}")) {
+    analysis += "⚠ Parece que una función no está cerrada correctamente.\n";
+  }
+
+  // Detectar console.log
+  if (!code.includes("console.log")) {
+    analysis += "ℹ Tip: Puedes usar console.log() para ver resultados.\n";
+  }
+
+  // Detectar variables sin declarar
+  if (code.includes("=") && !code.includes("let") && !code.includes("const") && !code.includes("var")) {
+    analysis += "⚠ Estás asignando valores sin declarar variables.\n";
+  }
+
+  // Detectar errores comunes
+  if (code.includes("==")) {
+    analysis += "ℹ Tip: Usa === para comparaciones estrictas.\n";
+  }
+
+  // Detectar loops sin cierre
+  if (code.includes("for") && !code.includes("}")) {
+    analysis += "⚠ Un ciclo for parece incompleto.\n";
+  }
+
+  // Detectar strings sin cerrar
+  if ((code.match(/"/g) || []).length % 2 !== 0) {
+    analysis += "⚠ Hay comillas sin cerrar.\n";
+  }
+
+  // Si no detectó nada malo
+  if (analysis === "🤖 Análisis de IA:\n\n") {
+    analysis += "✔ Tu código se ve bien. ¡Buen trabajo!";
+  }
+
+  return analysis;
+}
