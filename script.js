@@ -815,3 +815,9 @@ function utilLog(msg) {
 
   return refactored;
 }
+function showRefactoredCode() {
+  const code = document.getElementById("code-area").value;
+  const refactored = aiRefactorCode(code);
+  const consoleOutput = document.getElementById("console-output");
+  consoleOutput.innerText = refactored;
+}
