@@ -272,3 +272,16 @@ function nuevaFuncion() {
 }
 `;
 }
+function aiFixCode(code) {
+  let fixed = code;
+
+  // Reemplazar == por ===
+  fixed = fixed.replace(/==/g, "===");
+
+  // Agregar let si falta
+  if (fixed.includes("=") && !fixed.includes("let") && !fixed.includes("const") && !fixed.includes("var")) {
+    fixed = "let variable = " + fixed.split("=")[1].trim();
+  }
+
+  return fixed;
+}
