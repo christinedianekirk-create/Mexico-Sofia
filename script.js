@@ -455,3 +455,45 @@ function aiReplaceEditorCode(newCode) {
   const codeArea = document.getElementById("code-area");
   codeArea.value = newCode;
 }
+function aiAutoFix(code) {
+  let fixed = code;
+
+  fixed = fixed.replace(/==/g, "===");
+
+  if (fixed.includes("=") && !fixed.includes("let") && !fixed.includes("const") && !fixed.includes("var")) {
+    fixed = "let variable = " + fixed.split("=")[1].trim();
+  }
+
+  return fixed;
+}
+function aiChatEdit(message) {
+  if (message.includes("corrige")) {
+    const code = document.getElementById("code-area").value;
+    const fixed = aiAutoFix(code);
+    aiReplaceEditorCode(fixed);
+    return "🔧 Código corregido automáticamente.";
+  }
+
+  if (message.includes("genera función")) {
+    const generated = `
+function nuevaFuncionGenerada() {
+  console.log("Función generada por IA.");
+}
+`;
+    aiInsertIntoEditor(generated);
+    return "✨ Función generada y agregada al editor.";
+  }
+
+  if (message.includes("borra todo")) {
+    aiReplaceEditorCode("");
+    return "🧹 Editor limpiado.";
+  }
+
+  if (message.includes("escribe")) {
+    const text = message.replace("escribe", "").trim();
+    aiWriteToEditor(text);
+    return "✏ Código escrito en el editor.";
+  }
+
+  return "🤖 Puedo corregir, generar, escribir o limpiar tu editor.";
+}
