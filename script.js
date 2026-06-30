@@ -827,3 +827,11 @@ refactorBtn.classList.add("ide-btn");
 document.querySelector(".ide-actions").appendChild(refactorBtn);
 
 refactorBtn.addEventListener("click", showRefactoredCode);
+function aiChatRefactor(message) {
+  if (message.includes("refactoriza") || message.includes("profesional")) {
+    const code = document.getElementById("code-area").value;
+    return aiRefactorCode(code);
+  }
+
+  return "🤖 Puedo refactorizar tu código si escribes: 'refactoriza mi código'.";
+}
