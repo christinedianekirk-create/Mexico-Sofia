@@ -594,3 +594,48 @@ document.getElementById("code-area").addEventListener("keydown", (e) => {
     ghost.innerText = "";
   }
 });
+// =======================================
+// IA — SUGERENCIAS INTELIGENTES
+// =======================================
+
+function aiSmartSuggestions(code) {
+  let suggestions = "💡 Sugerencias inteligentes:\n\n";
+
+  // Detectar funciones largas
+  if (code.length > 120) {
+    suggestions += "🔧 Tu función es larga. Considera dividirla en partes más pequeñas.\n";
+  }
+
+  // Detectar console.log repetidos
+  const logs = (code.match(/console\.log/g) || []).length;
+  if (logs > 3) {
+    suggestions += "📘 Estás usando muchos console.log. Quizá quieras agruparlos.\n";
+  }
+
+  // Detectar variables sin uso
+  if (code.includes("let") && !code.includes("console.log")) {
+    suggestions += "ℹ Declaraste variables que no usas. Revisa si son necesarias.\n";
+  }
+
+  // Detectar loops sin break
+  if (code.includes("for") && !code.includes("break")) {
+    suggestions += "⚠ Un ciclo for sin break puede ser infinito.\n";
+  }
+
+  // Detectar funciones sin return
+  if (code.includes("function") && !code.includes("return")) {
+    suggestions += "ℹ Tu función no tiene return. ¿Debe devolver algo?\n";
+  }
+
+  // Detectar if sin else
+  if (code.includes("if") && !code.includes("else")) {
+    suggestions += "💭 Considera agregar un else para manejar otros casos.\n";
+  }
+
+  // Detectar código limpio
+  if (suggestions === "💡 Sugerencias inteligentes:\n\n") {
+    suggestions += "✔ Tu código se ve limpio y bien estructurado.";
+  }
+
+  return suggestions;
+}
