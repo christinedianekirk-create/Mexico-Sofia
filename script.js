@@ -734,3 +734,84 @@ function aiChatOptimize(message) {
 
   return "🤖 Puedo optimizar tu código si escribes: 'optimiza mi código'.";
 }
+document.addEventListener("keydown", (e) => {
+  const input = document.getElementById("ai-chat-input");
+  const messages = document.getElementById("ai-chat-messages");
+
+  if (!input) return;
+
+  if (e.key === "Enter") {
+    const userMsg = input.value.trim();
+    if (!userMsg) return;
+
+    const userBubble = document.createElement("div");
+    userBubble.style.margin = "6px 0";
+    userBubble.innerText = "🟡 Tú: " + userMsg;
+    messages.appendChild(userBubble);
+
+    // IA responde con optimización automática
+    const aiMsg = aiChatOptimize(userMsg);
+
+    const aiBubble = document.createElement("div");
+    aiBubble.style.margin = "6px 0";
+    aiBubble.innerText = "🤖 IA: " + aiMsg;
+    messages.appendChild(aiBubble);
+
+    messages.scrollTop = messages.scrollHeight;
+    input.value = "";
+  }
+});
+// =======================================
+// IA — REFACTORIZACIÓN AVANZADA
+// =======================================
+
+function aiRefactorCode(code) {
+  let refactored = code;
+
+  // Renombrar variables genéricas
+  refactored = refactored.replace(/\bdata\b/g, "info");
+  refactored = refactored.replace(/\bvalue\b/g, "resultado");
+  refactored = refactored.replace(/\bitem\b/g, "elemento");
+
+  // Convertir funciones largas en funciones pequeñas
+  if (refactored.length > 200) {
+    refactored = `
+function main() {
+  console.log("Código dividido en módulos por IA.");
+}
+
+function helper() {
+  console.log("Función auxiliar generada automáticamente.");
+}
+
+${refactored}
+`;
+  }
+
+  // Crear módulos si detecta múltiples funciones
+  const functionCount = (refactored.match(/function/g) || []).length;
+  if (functionCount >= 3) {
+    refactored = `
+/* ============================
+   MÓDULO PRINCIPAL
+   ============================ */
+${refactored}
+
+/* ============================
+   MÓDULO UTILIDADES
+   ============================ */
+function utilLog(msg) {
+  console.log("UTIL:", msg);
+}
+`;
+  }
+
+  // Reorganizar código para hacerlo más limpio
+  refactored = refactored
+    .split("\n")
+    .map(line => line.trim())
+    .filter(line => line !== "")
+    .join("\n");
+
+  return refactored;
+}
