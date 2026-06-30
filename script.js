@@ -584,3 +584,13 @@ document.getElementById("code-area").addEventListener("input", (e) => {
     showGhostText("");
   }
 });
+document.getElementById("code-area").addEventListener("keydown", (e) => {
+  const ghost = document.getElementById("ghost-text");
+
+  if (e.key === "Tab" && ghost && ghost.innerText.trim() !== "") {
+    e.preventDefault();
+    const codeArea = document.getElementById("code-area");
+    codeArea.value += "\n" + ghost.innerText;
+    ghost.innerText = "";
+  }
+});
