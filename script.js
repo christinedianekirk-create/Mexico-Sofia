@@ -285,3 +285,13 @@ function aiFixCode(code) {
 
   return fixed;
 }
+function aiExplainCode(code) {
+  const lines = code.split("\n");
+  let explanation = "📘 Explicación línea por línea:\n\n";
+
+  lines.forEach((line, i) => {
+    explanation += `Línea ${i + 1}: ${line.trim()}\n`;
+  });
+
+  return explanation;
+}
