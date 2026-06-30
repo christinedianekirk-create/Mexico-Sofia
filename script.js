@@ -447,3 +447,7 @@ function aiInsertIntoEditor(code) {
   const codeArea = document.getElementById("code-area");
   codeArea.value += "\n\n" + code;
 }
+function aiInsertIntoEditor(code) {
+  const codeArea = document.getElementById("code-area");
+  codeArea.value += "\n\n" + code;
+}
