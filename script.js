@@ -264,3 +264,11 @@ function connectIDEButtons() {
 }
 
 document.addEventListener("DOMContentLoaded", connectIDEButtons);
+function aiGenerateFunction(prompt) {
+  return `
+function nuevaFuncion() {
+  // Generado por IA
+  console.log("Función generada automáticamente: ${prompt}");
+}
+`;
+}
