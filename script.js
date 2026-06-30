@@ -720,3 +720,9 @@ function showOptimizedCode() {
   consoleOutput.innerText = optimized;
 }
 }
+const optimizeBtn = document.createElement("button");
+optimizeBtn.innerText = "Optimizar";
+optimizeBtn.classList.add("ide-btn");
+document.querySelector(".ide-actions").appendChild(optimizeBtn);
+
+optimizeBtn.addEventListener("click", showOptimizedCode);
