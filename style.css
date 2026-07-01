@@ -531,3 +531,10 @@ body {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+.btn {
+    background: #3a3a3a;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
