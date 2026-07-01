@@ -264,3 +264,7 @@ function openModule(name) {
 function openModule(id) {
     document.getElementById(id).classList.add("fade");
 }
+function kivoSay(text) {
+    const box = document.getElementById("kivo-messages");
+    box.innerHTML = text;
+}
