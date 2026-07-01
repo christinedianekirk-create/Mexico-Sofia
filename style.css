@@ -693,3 +693,24 @@ body {
     color: white;
 }
 #paquete-grande-2-conten
+#paquete-grande-2-contenido {
+    margin-top: 20px;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    color: white;
+}
+
+.soporte-botones button {
+    margin: 6px;
+    padding: 10px 16px;
+    background: #3a3a3a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.soporte-botones button:hover {
+    background: #575757;
+}
