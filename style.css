@@ -407,3 +407,12 @@ body {
   vertical-align: middle;
   color: #00bfa5;
 }
+.portada-wow {
+  background: linear-gradient(135deg, #004d40, #009688);
+  padding: 40px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.3);
+  animation: menuSlide 1s ease-out;
+}
