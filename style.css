@@ -336,3 +336,17 @@ body {
     cursor: pointer;
     font-size: 16px;
 }
+/* Botón para abrir SOFÍA Constructor Visual */
+.btn-sofia {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #00695c;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+.btn-sofia:hover {
+  background: #004d40;
+}
