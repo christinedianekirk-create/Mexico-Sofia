@@ -268,3 +268,7 @@ function kivoSay(text) {
     const box = document.getElementById("kivo-messages");
     box.innerHTML = text;
 }
+function showModule(id) {
+    document.querySelectorAll(".card").forEach(c => c.style.display = "none");
+    document.getElementById(id).style.display = "block";
+}
