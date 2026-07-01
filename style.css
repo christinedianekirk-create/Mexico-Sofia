@@ -595,3 +595,25 @@ body {
     background: #2a2a2a;
     border-radius: 10px;
 }
+/* Módulo Finanzas */
+.finanzas-menu button {
+    background: #2e2e2e;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.finanzas-menu button:hover {
+    background: #505050;
+}
+
+#finanzas-contenido {
+    margin-top: 20px;
+    padding: 15px;
+    background: #242424;
+    border-radius: 10px;
+    color: white;
+}
