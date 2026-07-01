@@ -641,3 +641,26 @@ body {
     border-radius: 10px;
     color: white;
 }
+/* Carreras Profesionales */
+.carreras-botones button {
+    background: #1e1e1e;
+    color: white;
+    padding: 12px 18px;
+    margin: 6px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.carreras-botones button:hover {
+    background: #3a3a3a;
+}
+
+#carreras-contenido {
+    margin-top: 20px;
+    padding: 20px;
+    background: #242424;
+    border-radius: 12px;
+    color: white;
+}
