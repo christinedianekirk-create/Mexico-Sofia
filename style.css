@@ -551,3 +551,14 @@ body {
     color: white;
     font-size: 16px;
 }
+.btn {
+    background: #444;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #666;
+}
