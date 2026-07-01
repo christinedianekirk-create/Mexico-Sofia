@@ -35,6 +35,18 @@ function toggleTheme() {
 // ===============================
 // IA — ANALIZAR CÓDIGO
 // ===============================
+function finanzasAbrir(tipo) {
+    const box = document.getElementById("finanzas-contenido");
+
+    const textos = {
+        gastos: "Aquí puedes registrar gastos diarios, semanales o mensuales.",
+        ingresos: "Control de ingresos: trabajo, ayudas, ventas, etc.",
+        metas: "Metas financieras: ahorro para casa, carro, viajes, emergencias.",
+        ahorros: "Herramientas para calcular y organizar tus ahorros."
+    };
+
+    box.innerHTML = textos[tipo];
+}
 
 function aiAnalyzeCode(code) {
   let analysis = "🤖 Análisis de IA:\n\n";
