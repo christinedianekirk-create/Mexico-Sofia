@@ -378,6 +378,15 @@ body {
   animation: sofiaPulse 2s infinite ease-in-out;
   transition: transform 0.2s ease;
 }
+/* Animación WOW para el menú */
+@keyframes menuSlide {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.menu-wow {
+  animation: menuSlide 0.8s ease-out;
+}
 
 .btn-sofia:hover {
   transform: scale(1.1);
