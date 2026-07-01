@@ -666,3 +666,64 @@ function abrirModulo(modulo) {
 
     box.innerHTML = modulos[modulo];
 }
+function abrirModulo2(modulo) {
+    const box = document.getElementById("paquete-grande-2-contenido");
+
+    const modulos2 = {
+        becas: `
+            <h3>Becas Disponibles en México</h3>
+            <ul>
+                <li>Becas Benito Juárez</li>
+                <li>Becas Jóvenes Construyendo el Futuro</li>
+                <li>Becas Estatales por Estado</li>
+                <li>Becas para Mamás Solteras</li>
+                <li>Becas para Universidades Públicas</li>
+                <li>Becas para Carreras Técnicas</li>
+                <li>Becas para Estudiantes de Bajo Recursos</li>
+                <li>Becas para estudiar en línea</li>
+            </ul>
+        `,
+
+        cursos: `
+            <h3>Cursos Gratis</h3>
+            <ul>
+                <li>Google Actívate — Cursos gratuitos</li>
+                <li>Microsoft Learn — Cursos gratuitos</li>
+                <li>Coursera — Cursos con becas</li>
+                <li>Programación básica</li>
+                <li>Administración</li>
+                <li>Contabilidad</li>
+                <li>Marketing Digital</li>
+                <li>Enfermería básica</li>
+            </ul>
+        `,
+
+        ayudalegal: `
+            <h3>Ayuda Legal</h3>
+            <ul>
+                <li>Cómo hacer un contrato</li>
+                <li>Cómo registrar un negocio</li>
+                <li>Cómo protegerse de fraudes</li>
+                <li>Cómo presentar una demanda sencilla</li>
+                <li>Asesoría legal gratuita del gobierno</li>
+                <li>Derechos laborales básicos</li>
+                <li>Cómo pedir apoyo legal estatal</li>
+            </ul>
+        `,
+
+        apoyo: `
+            <h3>Apoyo Social</h3>
+            <ul>
+                <li>Programas del Gobierno</li>
+                <li>Apoyo alimentario</li>
+                <li>Apoyo para adultos mayores</li>
+                <li>Apoyo para estudiantes</li>
+                <li>Apoyo para personas sin trabajo</li>
+                <li>Apoyo para madres solteras</li>
+                <li>Apoyo para familias vulnerables</li>
+            </ul>
+        `
+    };
+
+    box.innerHTML = modulos2[modulo];
+}
