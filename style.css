@@ -392,3 +392,12 @@ body {
   transform: scale(1.1);
   background: linear-gradient(135deg, #00bfa5, #00695c);
 }
+/* Animación WOW para todos los botones */
+.btn-wow {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-wow:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.5);
+}
