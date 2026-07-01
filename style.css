@@ -350,3 +350,36 @@ body {
 .btn-sofia:hover {
   background: #004d40;
 }
+/* Animación WOW para el botón */
+@keyframes sofiaPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 255, 200, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 255, 200, 0.3);
+  }
+}
+
+.btn-sofia {
+  display: inline-block;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #009688, #004d40);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  animation: sofiaPulse 2s infinite ease-in-out;
+  transition: transform 0.2s ease;
+}
+
+.btn-sofia:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #00bfa5, #00695c);
+}
