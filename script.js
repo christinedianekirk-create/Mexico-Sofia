@@ -558,3 +558,29 @@ function abrirCarrera3(carrera) {
 
     box.innerHTML = carreras3[carrera];
 }
+function abrirCarrera4(carrera) {
+    const box = document.getElementById("carreras4-contenido");
+
+    const carreras4 = {
+        enfermeria: `
+            <h3>Enfermería</h3>
+            <p>Carrera profesional con certificación digital.</p>
+            <ul>
+                <li>Módulo 1: Fundamentos de Enfermería</li>
+                <li>Módulo 2: Anatomía y Fisiología Humana</li>
+                <li>Módulo 3: Farmacología Básica</li>
+                <li>Módulo 4: Técnicas de Atención Clínica</li>
+                <li>Módulo 5: Urgencias Médicas</li>
+                <li>Módulo 6: Enfermería Comunitaria</li>
+                <li>Módulo 7: Cuidados del Paciente</li>
+                <li>Módulo 8: Enfermería Pediátrica</li>
+                <li>Módulo 9: Enfermería Geriátrica</li>
+                <li>Módulo 10: Ética y Legislación en Salud</li>
+                <li>Módulo 11: Procedimientos Hospitalarios</li>
+                <li>Módulo 12: Proyecto Final + Certificación</li>
+            </ul>
+        `
+    };
+
+    box.innerHTML = carreras4[carrera];
+}
