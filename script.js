@@ -272,3 +272,15 @@ function showModule(id) {
     document.querySelectorAll(".card").forEach(c => c.style.display = "none");
     document.getElementById(id).style.display = "block";
 }
+function abrirLegal(tipo) {
+    const box = document.getElementById("legal-contenido");
+
+    const textos = {
+        curp: "Aquí puedes obtener tu CURP, imprimirla y verificar datos.",
+        ine: "Información sobre trámites del INE, reposición y actualización.",
+        actas: "Actas de nacimiento, matrimonio, defunción y correcciones.",
+        imss: "Registro, consultas y trámites del IMSS."
+    };
+
+    box.innerHTML = textos[tipo];
+}
