@@ -384,3 +384,61 @@ function abrirEduExtra(tipo) {
 
     box.innerHTML = textos[tipo];
 }
+function abrirCarrera(carrera) {
+    const box = document.getElementById("carreras-contenido");
+
+    const carreras = {
+        admin: `
+            <h3>Administración de Empresas</h3>
+            <p>Carrera completa con certificación digital.</p>
+            <ul>
+                <li>Módulo 1: Fundamentos de Administración</li>
+                <li>Módulo 2: Recursos Humanos</li>
+                <li>Módulo 3: Finanzas Empresariales</li>
+                <li>Módulo 4: Contabilidad Básica</li>
+                <li>Módulo 5: Gestión de Proyectos</li>
+                <li>Módulo 6: Marketing Empresarial</li>
+                <li>Módulo 7: Liderazgo y Dirección</li>
+                <li>Módulo 8: Administración Estratégica</li>
+                <li>Módulo 9: Operaciones y Logística</li>
+                <li>Módulo 10: Proyecto Final + Certificación</li>
+            </ul>
+        `,
+
+        programacion: `
+            <h3>Programación / Desarrollo Web</h3>
+            <p>Carrera profesional con certificación digital.</p>
+            <ul>
+                <li>Módulo 1: Introducción a la Programación</li>
+                <li>Módulo 2: HTML5</li>
+                <li>Módulo 3: CSS3</li>
+                <li>Módulo 4: JavaScript</li>
+                <li>Módulo 5: Git y GitHub</li>
+                <li>Módulo 6: Frontend Profesional</li>
+                <li>Módulo 7: Backend con Node.js</li>
+                <li>Módulo 8: Bases de Datos</li>
+                <li>Módulo 9: APIs y Servicios</li>
+                <li>Módulo 10: Proyecto Final + Certificación</li>
+            </ul>
+        `,
+
+        contabilidad: `
+            <h3>Contabilidad</h3>
+            <p>Carrera completa con certificación digital.</p>
+            <ul>
+                <li>Módulo 1: Principios Contables</li>
+                <li>Módulo 2: Estados Financieros</li>
+                <li>Módulo 3: Contabilidad de Costos</li>
+                <li>Módulo 4: Contabilidad Fiscal</li>
+                <li>Módulo 5: Nóminas</li>
+                <li>Módulo 6: Auditoría</li>
+                <li>Módulo 7: Finanzas Empresariales</li>
+                <li>Módulo 8: SAT y Obligaciones</li>
+                <li>Módulo 9: Herramientas Contables</li>
+                <li>Módulo 10: Proyecto Final + Certificación</li>
+            </ul>
+        `
+    };
+
+    box.innerHTML = carreras[carrera];
+}
