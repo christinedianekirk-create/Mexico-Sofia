@@ -584,3 +584,85 @@ function abrirCarrera4(carrera) {
 
     box.innerHTML = carreras4[carrera];
 }
+#paquete-grande-contenido {
+    margin-top: 20px;
+    padding: 20px;
+    background: #242424;
+    border-radius: 12px;
+    color: white;
+}
+function abrirModulo(modulo) {
+    const box = document.getElementById("paquete-grande-contenido");
+
+    const modulos = {
+        certificaciones: `
+            <h3>Certificaciones Profesionales</h3>
+            <p>Certificaciones gratuitas y de bajo costo para México.</p>
+            <ul>
+                <li>Google Career Certificates</li>
+                <li>Microsoft Learn Certificaciones</li>
+                <li>Coursera – Becas para México</li>
+                <li>Certificación en Marketing Digital</li>
+                <li>Certificación en Programación Web</li>
+                <li>Certificación en Ciberseguridad</li>
+                <li>Certificación en Administración</li>
+                <li>Certificación en Contabilidad</li>
+                <li>Certificación en Logística</li>
+                <li>Certificación en Enfermería Básica</li>
+            </ul>
+        `,
+
+        empleos: `
+            <h3>Empleos en México</h3>
+            <p>Plataformas confiables para encontrar trabajo.</p>
+            <ul>
+                <li>Computrabajo</li>
+                <li>OCC Mundial</li>
+                <li>LinkedIn Empleos</li>
+                <li>Indeed México</li>
+                <li>Bolsas de trabajo del Gobierno</li>
+                <li>Empleos para jóvenes</li>
+                <li>Empleos sin experiencia</li>
+                <li>Empleos remotos</li>
+                <li>Empleos por carrera</li>
+                <li>Empleos por estado</li>
+            </ul>
+        `,
+
+        salarios: `
+            <h3>Salarios en México</h3>
+            <p>Promedios reales por carrera.</p>
+            <ul>
+                <li>Administración — $10,000 a $18,000</li>
+                <li>Programación — $18,000 a $45,000</li>
+                <li>Contabilidad — $12,000 a $22,000</li>
+                <li>Marketing — $10,000 a $25,000</li>
+                <li>Psicología — $9,000 a $18,000</li>
+                <li>Derecho — $12,000 a $30,000</li>
+                <li>Comercio Internacional — $14,000 a $28,000</li>
+                <li>Ingeniería Industrial — $15,000 a $32,000</li>
+                <li>Educación — $8,000 a $15,000</li>
+                <li>Enfermería — $10,000 a $20,000</li>
+            </ul>
+        `,
+
+        universidades: `
+            <h3>Universidades Gratuitas en México</h3>
+            <p>Opciones reales sin costo o con becas completas.</p>
+            <ul>
+                <li>UNAM — Universidad Nacional Autónoma de México</li>
+                <li>IPN — Instituto Politécnico Nacional</li>
+                <li>UAM — Universidad Autónoma Metropolitana</li>
+                <li>Universidad de la Salud CDMX</li>
+                <li>Universidad Rosario Castellanos</li>
+                <li>Universidad Benito Juárez</li>
+                <li>Universidades del Bienestar</li>
+                <li>Becas Jóvenes Construyendo el Futuro</li>
+                <li>Becas para carreras técnicas</li>
+                <li>Becas estatales por estado</li>
+            </ul>
+        `
+    };
+
+    box.innerHTML = modulos[modulo];
+}
