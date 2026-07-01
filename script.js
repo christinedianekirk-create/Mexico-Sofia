@@ -849,3 +849,46 @@ function abrirModulo3(modulo) {
 
     box.innerHTML = modulos3[modulo];
 }
+/* ============================
+   PAQUETE 4 — COMIDA Y RECETAS
+   ============================ */
+
+.paquete4-container {
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff8e1;
+    border-radius: 12px;
+    border: 2px solid #ffcc80;
+    max-width: 900px;
+}
+
+.paquete4-container h2 {
+    text-align: center;
+    color: #e65100;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.paquete4-modulo {
+    background: #ffe0b2;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-left: 6px solid #fb8c00;
+}
+
+.paquete4-modulo h3 {
+    margin: 0 0 10px 0;
+    color: #e65100;
+    font-size: 22px;
+}
+
+.paquete4-modulo ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.paquete4-modulo ul li {
+    margin-bottom: 6px;
+    font-size: 16px;
+}
