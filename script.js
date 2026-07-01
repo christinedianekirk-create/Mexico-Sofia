@@ -254,3 +254,10 @@ function connectIDEButtons() {
 }
 
 document.addEventListener("DOMContentLoaded", connectIDEButtons);
+function openModule(name) {
+    const module = document.getElementById(name);
+    if (module) {
+        module.classList.add("module-open");
+        module.scrollIntoView({ behavior: "smooth" });
+    }
+}
