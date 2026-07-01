@@ -500,3 +500,61 @@ function abrirCarrera2(carrera) {
 
     box.innerHTML = carreras2[carrera];
 }
+function abrirCarrera3(carrera) {
+    const box = document.getElementById("carreras3-contenido");
+
+    const carreras3 = {
+        comercio: `
+            <h3>Comercio Internacional / Logística</h3>
+            <p>Carrera profesional con certificación digital.</p>
+            <ul>
+                <li>Módulo 1: Introducción al Comercio Internacional</li>
+                <li>Módulo 2: Importaciones y Exportaciones</li>
+                <li>Módulo 3: Aduanas y Regulaciones</li>
+                <li>Módulo 4: Logística y Transporte</li>
+                <li>Módulo 5: Cadenas de Suministro</li>
+                <li>Módulo 6: Comercio Exterior en México</li>
+                <li>Módulo 7: Documentación Internacional</li>
+                <li>Módulo 8: Gestión de Almacenes</li>
+                <li>Módulo 9: Análisis de Mercados Globales</li>
+                <li>Módulo 10: Proyecto Final + Certificación</li>
+            </ul>
+        `,
+
+        industrial: `
+            <h3>Ingeniería Industrial</h3>
+            <p>Carrera completa con certificación digital.</p>
+            <ul>
+                <li>Módulo 1: Fundamentos de Ingeniería Industrial</li>
+                <li>Módulo 2: Procesos de Manufactura</li>
+                <li>Módulo 3: Optimización de Procesos</li>
+                <li>Módulo 4: Control de Calidad</li>
+                <li>Módulo 5: Seguridad Industrial</li>
+                <li>Módulo 6: Lean Manufacturing</li>
+                <li>Módulo 7: Gestión de Operaciones</li>
+                <li>Módulo 8: Logística y Producción</li>
+                <li>Módulo 9: Análisis de Datos Industriales</li>
+                <li>Módulo 10: Proyecto Final + Certificación</li>
+            </ul>
+        `,
+
+        educacion: `
+            <h3>Educación / Pedagogía</h3>
+            <p>Carrera profesional con certificación digital.</p>
+            <ul>
+                <li>Módulo 1: Fundamentos de Pedagogía</li>
+                <li>Módulo 2: Psicología Educativa</li>
+                <li>Módulo 3: Métodos de Enseñanza</li>
+                <li>Módulo 4: Diseño de Material Educativo</li>
+                <li>Módulo 5: Evaluación del Aprendizaje</li>
+                <li>Módulo 6: Gestión Escolar</li>
+                <li>Módulo 7: Inclusión y Diversidad</li>
+                <li>Módulo 8: Tecnología Educativa</li>
+                <li>Módulo 9: Didáctica Avanzada</li>
+                <li>Módulo 10: Proyecto Final + Certificación</li>
+            </ul>
+        `
+    };
+
+    box.innerHTML = carreras3[carrera];
+}
