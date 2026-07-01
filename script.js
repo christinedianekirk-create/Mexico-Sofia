@@ -788,3 +788,64 @@ function abrirModulo3(modulo) {
 
     box.innerHTML = modulos3[modulo];
 }
+function abrirModulo3(modulo) {
+    const box = document.getElementById("paquete-grande-3-contenido");
+
+    const modulos3 = {
+        gobierno: `
+            <h3>Programas del Gobierno</h3>
+            <ul>
+                <li>Apoyo Alimentario</li>
+                <li>Pensión para Adultos Mayores</li>
+                <li>Apoyo para Madres Solteras</li>
+                <li>Programas para Jóvenes</li>
+                <li>Programas de Educación</li>
+                <li>Programas de Vivienda</li>
+                <li>Programas de Salud</li>
+                <li>Programas de Seguridad Social</li>
+            </ul>
+        `,
+
+        salud: `
+            <h3>Salud</h3>
+            <ul>
+                <li>Clínicas gratuitas</li>
+                <li>Consultas de bajo costo</li>
+                <li>Vacunas gratuitas</li>
+                <li>Atención dental básica</li>
+                <li>Atención psicológica</li>
+                <li>Programas de nutrición</li>
+                <li>Atención para embarazadas</li>
+                <li>Atención para niños</li>
+            </ul>
+        `,
+
+        vivienda: `
+            <h3>Vivienda</h3>
+            <ul>
+                <li>Programas de casas económicas</li>
+                <li>Apoyo para renta</li>
+                <li>Créditos para vivienda</li>
+                <li>Mejoras del hogar</li>
+                <li>Subsidios para construcción</li>
+                <li>Programas estatales de vivienda</li>
+                <li>Vivienda para familias vulnerables</li>
+            </ul>
+        `,
+
+        seguridad: `
+            <h3>Seguridad y Protección</h3>
+            <ul>
+                <li>Protección contra violencia</li>
+                <li>Protección para mujeres</li>
+                <li>Protección para niños</li>
+                <li>Protección legal</li>
+                <li>Programas de prevención</li>
+                <li>Seguridad comunitaria</li>
+                <li>Líneas de emergencia</li>
+            </ul>
+        `
+    };
+
+    box.innerHTML = modulos3[modulo];
+}
