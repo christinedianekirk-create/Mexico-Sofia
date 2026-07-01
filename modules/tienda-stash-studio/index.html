@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Stash & Studio — Girly Neon Shop</title>
+<style>
+    body {
+        background: linear-gradient(135deg, #ff9df5, #b300ff, #2a0033);
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        text-align: center;
+        padding: 40px;
+    }
 
+    h1 {
+        font-size: 3.5rem;
+        color: #ffb3f9;
+        text-shadow: 0 0 25px #ff4df0, 0 0 45px #b300ff;
+        margin-bottom: 10px;
+    }
+
+    .tagline {
+        font-size: 1.4rem;
+        color: #ffd6fa;
+        margin-bottom: 40px;
+        text-shadow: 0 0 15px #ff4df0;
+    }
+
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 25px;
+        padding: 20px;
+        backdrop-filter: blur(12px);
+        box-shadow: 0 0 25px #ff4df0;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.07);
+        box-shadow: 0 0 35px #ff9df5;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 15px;
+        box-shadow: 0 0 20px #ff4df0;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 14px 22px;
+        background: #ff4df0;
+        color: white;
+        border-radius: 35px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 0 20px #ff4df0;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #ff9df5;
+        box-shadow: 0 0 30px #ff9df5;
+    }
+</style>
+</head>
+<body>
+
+<h1>💜 Stash & Studio 💗</h1>
+<p class="tagline">La tienda girly más coqueta, brillante y chula del internet ✨💋</p>
+
+<div class="productos">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250x250/ff9df5/ffffff?text=Producto+1">
+        <h3>Producto 1</h3>
+        <a class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250x250/b300ff/ffffff?text=Producto+2">
+        <h3>Producto 2</h3>
+        <a class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250x250/ff4df0/ffffff?text=Producto+3">
+        <h3>Producto 3</h3>
+        <a class="btn">Comprar</a>
+    </div>
+
+</div>
+
+</body>
+</html>
