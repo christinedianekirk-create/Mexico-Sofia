@@ -469,3 +469,52 @@ body {
   margin-bottom: 20px;
   animation: menuSlide 0.5s ease-out;
 }
+/* ============================
+   CONSTRUCTOR VISUAL — SOFÍA
+   ============================ */
+
+.visual-builder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.builder-card {
+    background: var(--card-bg, #1e1e1e);
+    border-radius: 14px;
+    padding: 22px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.25s ease, background 0.25s ease;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.builder-card:hover {
+    transform: translateY(-6px);
+    background: var(--card-hover, #2a2a2a);
+}
+
+.builder-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--text-color, #fff);
+}
+
+.builder-card p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    color: var(--text-color, #fff);
+}
+
+/* Animación de apertura */
+.module-open {
+    animation: fadeIn 0.35s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.97); }
+    to { opacity: 1; transform: scale(1); }
+}
