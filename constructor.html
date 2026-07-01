@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SOFÍA Constructor Visual</title>
+  <link rel="stylesheet" href="constructor.css">
+  <script defer src="constructor.js"></script>
+  <script defer src="generador-visual.js"></script>
+</head>
 
+<body>
+  <header class="topbar">
+    <h1>SOFÍA — Constructor Visual</h1>
+  </header>
+
+  <main class="layout">
+    <section class="panel-input">
+      <h2>Describe lo que quieres crear</h2>
+      <textarea id="prompt" placeholder="Ejemplo: Crear una tienda con 75 categorías..."></textarea>
+      <button id="btn-generar">Generar Interfaz</button>
+    </section>
+
+    <section class="panel-output">
+      <h2>Resultado generado</h2>
+      <div id="resultado"></div>
+    </section>
+  </main>
+</body>
+</html>
