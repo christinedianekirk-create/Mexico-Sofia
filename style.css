@@ -401,3 +401,9 @@ body {
   transform: scale(1.08);
   box-shadow: 0 0 15px rgba(0, 255, 200, 0.5);
 }
+.icon {
+  font-size: 22px;
+  margin-right: 8px;
+  vertical-align: middle;
+  color: #00bfa5;
+}
