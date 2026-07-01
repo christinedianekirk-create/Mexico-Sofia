@@ -442,3 +442,61 @@ function abrirCarrera(carrera) {
 
     box.innerHTML = carreras[carrera];
 }
+function abrirCarrera2(carrera) {
+    const box = document.getElementById("carreras2-contenido");
+
+    const carreras2 = {
+        marketing: `
+            <h3>Marketing Digital</h3>
+            <p>Carrera profesional con certificación digital.</p>
+            <ul>
+                <li>Módulo 1: Fundamentos del Marketing</li>
+                <li>Módulo 2: Redes Sociales</li>
+                <li>Módulo 3: Publicidad Digital</li>
+                <li>Módulo 4: SEO y Posicionamiento</li>
+                <li>Módulo 5: Email Marketing</li>
+                <li>Módulo 6: Embudos de Venta</li>
+                <li>Módulo 7: Análisis de Datos</li>
+                <li>Módulo 8: Branding Profesional</li>
+                <li>Módulo 9: Estrategias Avanzadas</li>
+                <li>Módulo 10: Proyecto Final + Certificación</li>
+            </ul>
+        `,
+
+        psicologia: `
+            <h3>Psicología</h3>
+            <p>Carrera completa con certificación digital.</p>
+            <ul>
+                <li>Módulo 1: Introducción a la Psicología</li>
+                <li>Módulo 2: Psicología del Desarrollo</li>
+                <li>Módulo 3: Psicología Clínica</li>
+                <li>Módulo 4: Psicología Social</li>
+                <li>Módulo 5: Psicología Educativa</li>
+                <li>Módulo 6: Trastornos Psicológicos</li>
+                <li>Módulo 7: Técnicas de Evaluación</li>
+                <li>Módulo 8: Intervención Terapéutica</li>
+                <li>Módulo 9: Ética Profesional</li>
+                <li>Módulo 10: Proyecto Final + Certificación</li>
+            </ul>
+        `,
+
+        derecho: `
+            <h3>Derecho</h3>
+            <p>Carrera profesional con certificación digital.</p>
+            <ul>
+                <li>Módulo 1: Introducción al Derecho</li>
+                <li>Módulo 2: Derecho Civil</li>
+                <li>Módulo 3: Derecho Penal</li>
+                <li>Módulo 4: Derecho Laboral</li>
+                <li>Módulo 5: Derecho Mercantil</li>
+                <li>Módulo 6: Derecho Constitucional</li>
+                <li>Módulo 7: Juicios y Procedimientos</li>
+                <li>Módulo 8: Redacción Jurídica</li>
+                <li>Módulo 9: Leyes en México (SAT, IMSS, INFONAVIT)</li>
+                <li>Módulo 10: Proyecto Final + Certificación</li>
+            </ul>
+        `
+    };
+
+    box.innerHTML = carreras2[carrera];
+}
