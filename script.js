@@ -296,3 +296,91 @@ function abrirLegal(tipo) {
 
     box.innerHTML = textos[tipo];
 }
+function abrirNivel(nivel) {
+    const box = document.getElementById("educacion-contenido");
+
+    const textos = {
+        kinder: `
+            <h3>Kínder</h3>
+            <p>Guías para inscripción, requisitos y materiales básicos.</p>
+            <ul>
+                <li>Lista de útiles económicos.</li>
+                <li>Enlaces a programas de apoyo para primera infancia.</li>
+                <li>Consejos para mamás y papás que trabajan.</li>
+            </ul>
+        `,
+        primaria: `
+            <h3>Primaria</h3>
+            <p>Información de inscripción, cambios de escuela y apoyo escolar.</p>
+            <ul>
+                <li>Acceso a libros gratuitos de la SEP.</li>
+                <li>Programas de becas para primaria.</li>
+                <li>Material de refuerzo en matemáticas y lectura.</li>
+            </ul>
+        `,
+        secundaria: `
+            <h3>Secundaria</h3>
+            <p>Guías para inscripción, cambios y apoyo académico.</p>
+            <ul>
+                <li>Libros y recursos gratuitos en línea.</li>
+                <li>Programas de becas para jóvenes.</li>
+                <li>Orientación vocacional básica para elegir prepa.</li>
+            </ul>
+        `,
+        prepa: `
+            <h3>Prepa</h3>
+            <p>Opciones de preparatoria pública, abierta y en línea.</p>
+            <ul>
+                <li>Enlaces a prepas oficiales (UNAM, IPN, estatales).</li>
+                <li>Programas de becas para bachillerato.</li>
+                <li>Preparación para entrar a carreras profesionales.</li>
+            </ul>
+        `
+    };
+
+    box.innerHTML = textos[nivel];
+}
+
+function abrirEduExtra(tipo) {
+    const box = document.getElementById("educacion-contenido");
+
+    const textos = {
+        becas: `
+            <h3>Becas</h3>
+            <p>Listado de becas y apoyos para estudiantes en México.</p>
+            <ul>
+                <li>Becas Benito Juárez.</li>
+                <li>Programas estatales de apoyo escolar.</li>
+                <li>Requisitos y pasos para solicitar becas.</li>
+            </ul>
+        `,
+        material: `
+            <h3>Material gratuito</h3>
+            <p>Recursos gratuitos para estudiar desde casa.</p>
+            <ul>
+                <li>Libros digitales oficiales.</li>
+                <li>Plataformas gratuitas de cursos básicos.</li>
+                <li>Videos y guías para tareas.</li>
+            </ul>
+        `,
+        carreras: `
+            <h3>Carreras con certificación</h3>
+            <p>Acceso a planes de estudio completos de las 10 mejores carreras de México.</p>
+            <ul>
+                <li>Administración de Empresas</li>
+                <li>Programación / Desarrollo Web</li>
+                <li>Contabilidad</li>
+                <li>Marketing Digital</li>
+                <li>Psicología</li>
+                <li>Derecho</li>
+                <li>Comercio Internacional / Logística</li>
+                <li>Ingeniería Industrial</li>
+                <li>Educación / Pedagogía</li>
+                <li>Enfermería</li>
+            </ul>
+            <p>Cada carrera tendrá módulos completos, proyectos y certificación digital.</p>
+        `
+    };
+
+    box.innerHTML = textos[tipo];
+}
