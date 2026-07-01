@@ -617,3 +617,27 @@ body {
     border-radius: 10px;
     color: white;
 }
+/* Módulo Educación */
+.edu-niveles button,
+.edu-extra button {
+    background: #2e2e2e;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.edu-niveles button:hover,
+.edu-extra button:hover {
+    background: #505050;
+}
+
+#educacion-contenido {
+    margin-top: 20px;
+    padding: 15px;
+    background: #242424;
+    border-radius: 10px;
+    color: white;
+}
