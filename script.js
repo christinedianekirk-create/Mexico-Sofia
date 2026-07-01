@@ -261,3 +261,6 @@ function openModule(name) {
         module.scrollIntoView({ behavior: "smooth" });
     }
 }
+function openModule(id) {
+    document.getElementById(id).classList.add("fade");
+}
