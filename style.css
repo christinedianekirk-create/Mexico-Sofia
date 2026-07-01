@@ -524,3 +524,6 @@ body {
     border-radius: 12px;
     color: white;
 }
+.fade {
+    animation: fadeIn 0.4s ease;
+}
